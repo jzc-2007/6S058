@@ -1,0 +1,24 @@
+{
+  "num_examples": 3840,
+  "num_train": 3072,
+  "num_val": 768,
+  "feature_dim": 40,
+  "num_styles": 8,
+  "styles": [
+    "classic_travel",
+    "cinematic",
+    "premium_ad",
+    "bauhaus",
+    "neon",
+    "literary",
+    "tech",
+    "sport"
+  ],
+  "rank": 4,
+  "epochs": 900,
+  "final_train_loss": 8.110265907930922e-09,
+  "final_val_loss": 8.53712212034452e-09,
+  "final_val_acc": 1.0,
+  "checkpoint": "checkpoints/style_lora_adapter.pt",
+  "style_map": "results/style_predictions.json"
+}

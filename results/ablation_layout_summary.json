@@ -1,0 +1,14 @@
+{
+  "full": {
+    "mean_text_region_edge_density": 0.31596251924832663,
+    "num_boxes": 30
+  },
+  "no_saliency": {
+    "mean_text_region_edge_density": 0.32816914295156796,
+    "num_boxes": 30
+  },
+  "no_contrast": {
+    "mean_text_region_edge_density": 0.31596251924832663,
+    "num_boxes": 30
+  }
+}

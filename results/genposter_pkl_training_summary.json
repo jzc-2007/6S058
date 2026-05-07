@@ -1,0 +1,33 @@
+{
+  "num_designs": 50000,
+  "num_text_designs": 49996,
+  "num_layout_examples": 877149,
+  "dataset": "/root/.cache/huggingface/hub/datasets--BruceW91--GenPoster-100K/snapshots/1c458dec28b1f8f4ae3f6daf8f5d9e3cbbd9067b/0503_raw_offline.pkl",
+  "max_records": 50000,
+  "device": "cuda",
+  "layout_feature_dim": 16,
+  "style_feature_dim": 23,
+  "layout_epochs": 30,
+  "style_epochs": 45,
+  "layout_final_val_acc": 0.9506813883781433,
+  "style_final_val_acc": 0.43533334136009216,
+  "style_names": [
+    "classic_travel",
+    "cinematic",
+    "premium_ad",
+    "bauhaus",
+    "neon",
+    "literary",
+    "tech",
+    "sport",
+    "editorial_serif",
+    "modern_minimal",
+    "playful_social",
+    "clean_corporate",
+    "organic_market"
+  ],
+  "style_map": "results/genposter_pkl_style_predictions.json",
+  "layout_priors": "results/genposter_pkl_layout_priors.json",
+  "layout_checkpoint": "checkpoints/crello_layout_prior.pt",
+  "style_checkpoint": "checkpoints/crello_style_lora_adapter.pt"
+}

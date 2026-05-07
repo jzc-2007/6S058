@@ -1,0 +1,11 @@
+{
+  "num_examples": 1248,
+  "num_train": 998,
+  "num_val": 250,
+  "feature_dim": 14,
+  "epochs": 450,
+  "final_train_loss": 0.14643698139116168,
+  "final_val_loss": 0.20049995183944702,
+  "final_val_corr": 0.8873490010379217,
+  "checkpoint": "checkpoints/layout_ranker.pt"
+}

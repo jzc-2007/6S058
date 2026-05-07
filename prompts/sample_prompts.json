@@ -1,0 +1,242 @@
+[
+  {
+    "id": "travel_iceland",
+    "category": "travel",
+    "background_prompt": "a cinematic vintage travel poster background of Iceland glaciers, black volcanic sand, northern lights, elegant editorial composition, no words, no letters, no logo",
+    "baseline_prompt": "a cinematic vintage travel poster for Iceland with the exact text ICELAND, LAND OF FIRE AND ICE, SUMMER 2026, elegant typography",
+    "texts": ["ICELAND", "LAND OF FIRE AND ICE", "SUMMER 2026"],
+    "edit_texts": ["ICELAND", "LIGHT UNDER THE NORTH", "WINTER 2027"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "movie_solar",
+    "category": "movie",
+    "background_prompt": "dramatic science fiction movie poster background, lone astronaut facing a burning solar eclipse above a desert, cinematic lighting, no words, no letters",
+    "baseline_prompt": "a dramatic science fiction movie poster with the exact text SOLAR WAKE, A FILM BY NORA CHEN, 2091, cinematic typography",
+    "texts": ["SOLAR WAKE", "A FILM BY NORA CHEN", "2091"],
+    "edit_texts": ["SOLAR WAKE", "DIRECTED BY NORA CHEN", "OPENING FRIDAY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "coffee_roast",
+    "category": "ad",
+    "background_prompt": "premium coffee advertisement background, espresso cup, roasted beans, morning window light, refined product photography, no words, no letters",
+    "baseline_prompt": "a premium coffee advertisement with the exact text NIGHT OWL ROAST, SMALL BATCH COFFEE, 20% OFF TODAY",
+    "texts": ["NIGHT OWL ROAST", "SMALL BATCH COFFEE", "20% OFF TODAY"],
+    "edit_texts": ["NIGHT OWL ROAST", "SINGLE ORIGIN BLEND", "ORDER BY MAY 10"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "museum_bauhaus",
+    "category": "museum",
+    "background_prompt": "modern museum exhibition poster background, Bauhaus geometry, red blue yellow blocks, clean gallery lighting, no words, no letters",
+    "baseline_prompt": "a modern museum exhibition poster with the exact text BAUHAUS NOW, FORMS IN MOTION, APRIL 12 - JULY 30",
+    "texts": ["BAUHAUS NOW", "FORMS IN MOTION", "APRIL 12 - JULY 30"],
+    "edit_texts": ["BAUHAUS NOW", "COLOR AND CONSTRUCTION", "MAY 3 - AUGUST 18"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "concert_neon",
+    "category": "concert",
+    "background_prompt": "neon concert flyer background, synthwave stage lights, crowd silhouettes, magenta and cyan atmosphere, no words, no letters",
+    "baseline_prompt": "a neon concert flyer with the exact text ELECTRIC MIDNIGHT, LIVE AT THE VAULT, SATURDAY 9 PM",
+    "texts": ["ELECTRIC MIDNIGHT", "LIVE AT THE VAULT", "SATURDAY 9 PM"],
+    "edit_texts": ["ELECTRIC MIDNIGHT", "ONE NIGHT ONLY", "FRIDAY 10 PM"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "book_orbit",
+    "category": "book",
+    "background_prompt": "minimal literary science fiction book cover background, small planet orbiting above ocean horizon, quiet elegant mood, no words, no letters",
+    "baseline_prompt": "a minimalist book cover with the exact text THE LAST ORBIT, MARA VALE, A NOVEL",
+    "texts": ["THE LAST ORBIT", "MARA VALE", "A NOVEL"],
+    "edit_texts": ["THE LAST ORBIT", "MARA VALE", "NEW EDITION"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "food_ramen",
+    "category": "ad",
+    "background_prompt": "restaurant poster background, steaming ramen bowl with soft studio light, black ceramic table, appetizing, no words, no letters",
+    "baseline_prompt": "a restaurant poster with the exact text MIDNIGHT RAMEN, GRAND OPENING, BOWLS FROM $12",
+    "texts": ["MIDNIGHT RAMEN", "GRAND OPENING", "BOWLS FROM $12"],
+    "edit_texts": ["MIDNIGHT RAMEN", "LATE NIGHT MENU", "OPEN UNTIL 2 AM"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "tech_summit",
+    "category": "event",
+    "background_prompt": "technology conference poster background, abstract glass architecture, luminous circuits, professional blue and white lighting, no words, no letters",
+    "baseline_prompt": "a technology conference poster with the exact text VISION SUMMIT, HUMAN CENTERED AI, OCTOBER 8",
+    "texts": ["VISION SUMMIT", "HUMAN CENTERED AI", "OCTOBER 8"],
+    "edit_texts": ["VISION SUMMIT", "COMPUTER VISION FOR DESIGN", "OCTOBER 9"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "fitness_launch",
+    "category": "ad",
+    "background_prompt": "fitness product launch poster background, running shoes on track, sunrise, energetic commercial photography, no words, no letters",
+    "baseline_prompt": "a fitness launch poster with the exact text PULSE RUNNER, BUILT FOR SPEED, LAUNCH WEEK",
+    "texts": ["PULSE RUNNER", "BUILT FOR SPEED", "LAUNCH WEEK"],
+    "edit_texts": ["PULSE RUNNER", "LIGHTER EVERY MILE", "TRY IT TODAY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "education_space",
+    "category": "event",
+    "background_prompt": "educational science poster background, students watching a telescope under starry sky, warm inspiring atmosphere, no words, no letters",
+    "baseline_prompt": "an educational science poster with the exact text STARS FOR ALL, FAMILY ASTRONOMY NIGHT, MAY 18",
+    "texts": ["STARS FOR ALL", "FAMILY ASTRONOMY NIGHT", "MAY 18"],
+    "edit_texts": ["STARS FOR ALL", "OBSERVATORY OPEN HOUSE", "JUNE 2"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "skincare_lumina",
+    "category": "ad",
+    "background_prompt": "luxury skincare advertisement background, glass serum bottle, soft peach studio lighting, clean reflective surface, no words, no letters",
+    "baseline_prompt": "a luxury skincare advertisement with the exact text LUMINA SERUM, GLOW STARTS HERE, NEW FORMULA",
+    "texts": ["LUMINA SERUM", "GLOW STARTS HERE", "NEW FORMULA"],
+    "edit_texts": ["LUMINA SERUM", "HYDRATION THAT LASTS", "SHOP THE DROP"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "jazz_blue_note",
+    "category": "concert",
+    "background_prompt": "moody jazz club poster background, saxophone on stage, blue spotlight, smoky atmosphere, no words, no letters",
+    "baseline_prompt": "a jazz concert poster with the exact text BLUE NOTE HOUR, QUARTET LIVE, SUNDAY 8 PM",
+    "texts": ["BLUE NOTE HOUR", "QUARTET LIVE", "SUNDAY 8 PM"],
+    "edit_texts": ["BLUE NOTE HOUR", "LATE SET ADDED", "SUNDAY 10 PM"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "farmers_market",
+    "category": "event",
+    "background_prompt": "warm farmers market poster background, baskets of colorful vegetables and flowers, morning sunlight, no words, no letters",
+    "baseline_prompt": "a farmers market poster with the exact text RIVER MARKET, LOCAL FARMS, SATURDAY MORNING",
+    "texts": ["RIVER MARKET", "LOCAL FARMS", "SATURDAY MORNING"],
+    "edit_texts": ["RIVER MARKET", "SPRING HARVEST", "EVERY SATURDAY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "architecture_lecture",
+    "category": "event",
+    "background_prompt": "architecture lecture poster background, concrete museum atrium, dramatic shadows, minimalist editorial layout, no words, no letters",
+    "baseline_prompt": "an architecture lecture poster with the exact text CITIES IN CONCRETE, PUBLIC LECTURE, NOVEMBER 14",
+    "texts": ["CITIES IN CONCRETE", "PUBLIC LECTURE", "NOVEMBER 14"],
+    "edit_texts": ["CITIES IN CONCRETE", "DESIGN FORUM", "NOVEMBER 21"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "bike_commute",
+    "category": "ad",
+    "background_prompt": "urban bicycle advertisement background, sleek commuter bike on wet city street at dusk, commercial photography, no words, no letters",
+    "baseline_prompt": "a bicycle advertisement with the exact text VELO CITY, RIDE LIGHTER, SPRING SALE",
+    "texts": ["VELO CITY", "RIDE LIGHTER", "SPRING SALE"],
+    "edit_texts": ["VELO CITY", "BUILT FOR COMMUTERS", "TEST RIDE TODAY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "tea_ceremony",
+    "category": "ad",
+    "background_prompt": "premium tea poster background, ceramic teapot, green tea leaves, calm natural window light, no words, no letters",
+    "baseline_prompt": "a premium tea poster with the exact text MOUNTAIN TEA, FIRST FLUSH, LIMITED HARVEST",
+    "texts": ["MOUNTAIN TEA", "FIRST FLUSH", "LIMITED HARVEST"],
+    "edit_texts": ["MOUNTAIN TEA", "QUIET MORNING BLEND", "BREW SLOWLY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "album_static",
+    "category": "concert",
+    "background_prompt": "experimental electronic album cover background, abstract soundwave sculpture, clean metallic geometry, violet and teal studio lighting, no words, no letters",
+    "baseline_prompt": "an electronic album cover with the exact text STATIC GARDEN, ECHO VALE, OUT NOW",
+    "texts": ["STATIC GARDEN", "ECHO VALE", "OUT NOW"],
+    "edit_texts": ["STATIC GARDEN", "ECHO VALE", "DELUXE EDITION"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "climate_workshop",
+    "category": "event",
+    "background_prompt": "climate workshop poster background, aerial coastline, wind turbines, clean infographic feeling, no words, no letters",
+    "baseline_prompt": "a climate workshop poster with the exact text RESILIENT COASTS, COMMUNITY WORKSHOP, JUNE 12",
+    "texts": ["RESILIENT COASTS", "COMMUNITY WORKSHOP", "JUNE 12"],
+    "edit_texts": ["RESILIENT COASTS", "PLANNING SESSION", "JUNE 19"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "game_launch",
+    "category": "movie",
+    "background_prompt": "video game launch poster background, fantasy city gate, glowing portal, heroic dramatic lighting, no words, no letters",
+    "baseline_prompt": "a video game launch poster with the exact text GATE OF ASH, BEGIN THE QUEST, AVAILABLE NOW",
+    "texts": ["GATE OF ASH", "BEGIN THE QUEST", "AVAILABLE NOW"],
+    "edit_texts": ["GATE OF ASH", "SEASON ONE", "PLAY TODAY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "fashion_atelier",
+    "category": "ad",
+    "background_prompt": "fashion campaign poster background, tailored jacket on mannequin, editorial studio lighting, elegant fabric texture, no words, no letters",
+    "baseline_prompt": "a fashion campaign poster with the exact text ATELIER LINE, FALL COLLECTION, PRIVATE PREVIEW",
+    "texts": ["ATELIER LINE", "FALL COLLECTION", "PRIVATE PREVIEW"],
+    "edit_texts": ["ATELIER LINE", "WINTER COLLECTION", "BOOK A FITTING"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "photo_exhibit",
+    "category": "museum",
+    "background_prompt": "photography exhibition poster background, black and white gallery wall, framed landscape prints, soft museum lighting, no words, no letters",
+    "baseline_prompt": "a photography exhibition poster with the exact text SILVER LIGHT, LANDSCAPES REFRAMED, SEPTEMBER 5",
+    "texts": ["SILVER LIGHT", "LANDSCAPES REFRAMED", "SEPTEMBER 5"],
+    "edit_texts": ["SILVER LIGHT", "NEW PHOTOGRAPHY", "SEPTEMBER 12"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "charity_run",
+    "category": "ad",
+    "background_prompt": "charity run poster background, runners crossing a bridge at sunrise, hopeful community event photography, no words, no letters",
+    "baseline_prompt": "a charity run poster with the exact text RUN FOR HOPE, 5K COMMUNITY RACE, REGISTER TODAY",
+    "texts": ["RUN FOR HOPE", "5K COMMUNITY RACE", "REGISTER TODAY"],
+    "edit_texts": ["RUN FOR HOPE", "10K ADDED", "REGISTER BY MAY 20"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "boardgame_night",
+    "category": "event",
+    "background_prompt": "board game night poster background, tabletop dice and colorful game pieces, warm cafe lighting, no words, no letters",
+    "baseline_prompt": "a board game night poster with the exact text TABLETOP NIGHT, GAMES AND SNACKS, THURSDAY 7 PM",
+    "texts": ["TABLETOP NIGHT", "GAMES AND SNACKS", "THURSDAY 7 PM"],
+    "edit_texts": ["TABLETOP NIGHT", "BEGINNERS WELCOME", "THURSDAY 6 PM"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cookbook_cover",
+    "category": "book",
+    "background_prompt": "cookbook cover background, rustic kitchen table with herbs, tomatoes, olive oil, natural light, no words, no letters",
+    "baseline_prompt": "a cookbook cover with the exact text SIMPLE SUPPERS, LENA PARK, EVERYDAY RECIPES",
+    "texts": ["SIMPLE SUPPERS", "LENA PARK", "EVERYDAY RECIPES"],
+    "edit_texts": ["SIMPLE SUPPERS", "LENA PARK", "WEEKNIGHT EDITION"],
+    "width": 768,
+    "height": 1152
+  }
+]
