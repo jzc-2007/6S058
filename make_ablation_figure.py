@@ -39,16 +39,25 @@ def main() -> None:
         ("No Contrast", Path("outputs/ablations/no_contrast")),
         ("Full", Path("outputs/ours")),
     ]
-    cell_w, cell_h = 255, 398
-    canvas = Image.new("RGB", (cell_w * len(cols), cell_h * len(items) + 58), "white")
+    groups_per_row = 2
+    cell_w, row_h = 178, 300
+    group_gap, header_h = 58, 38
+    rows = (len(items) + groups_per_row - 1) // groups_per_row
+    group_w = cell_w * len(cols)
+    canvas_w = group_w * groups_per_row + group_gap * (groups_per_row - 1)
+    canvas = Image.new("RGB", (canvas_w, header_h + row_h * rows), "white")
     draw = ImageDraw.Draw(canvas)
-    for c, (name, _) in enumerate(cols):
-        draw.text((c * cell_w + 14, 16), name, fill=(20, 20, 20), font=font(20))
-    for r, item in enumerate(items):
-        y = 54 + r * cell_h
+    for g in range(groups_per_row):
+        base_x = g * (group_w + group_gap)
         for c, (_, folder) in enumerate(cols):
-            canvas.paste(thumb(folder / f"{item['id']}.png"), (c * cell_w + 12, y))
-        draw.text((8, y + 352), item["id"], fill=(60, 60, 60), font=font(15))
+            draw.text((base_x + c * cell_w + 8, 13), cols[c][0], fill=(20, 20, 20), font=font(13))
+    for idx, item in enumerate(items):
+        row, group = divmod(idx, groups_per_row)
+        base_x = group * (group_w + group_gap)
+        y = header_h + row * row_h
+        for c, (_, folder) in enumerate(cols):
+            canvas.paste(thumb(folder / f"{item['id']}.png", (162, 243)), (base_x + c * cell_w + 8, y))
+        draw.text((base_x + 8, y + 250), item["id"], fill=(60, 60, 60), font=font(12))
     args.figure.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(args.figure)
     print(f"[saved] {args.figure}")

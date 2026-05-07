@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/edit_after_qwen_seed_886_tool/farmers_market.png",
+  "blocks": [
+    {
+      "text": "RIVER MARKET",
+      "role": "title",
+      "bbox": [
+        92,
+        92,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        248,
+        210
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "SPRING HARVEST",
+      "role": "subtitle",
+      "bbox": [
+        61,
+        990,
+        537,
+        94
+      ],
+      "color": [
+        242,
+        255,
+        225
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "EVERY SATURDAY",
+      "role": "meta",
+      "bbox": [
+        122,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        242,
+        255,
+        225
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "organic_market",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 0,
+    "text_effect": "soft_gradient",
+    "accent_color": [
+      255,
+      225,
+      119
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "RIVER MARKET",
+      "rendered_text": "RIVER\nMARKET",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Lobster-Regular.ttf",
+      "font_size": 100,
+      "tracking_px": 0,
+      "text_effect": "soft_gradient",
+      "text_rect": [
+        188,
+        95,
+        578,
+        284
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "SPRING HARVEST",
+      "rendered_text": "SPRING HARVEST",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/LeagueSpartan-VariableFont_wght.ttf",
+      "font_size": 54,
+      "tracking_px": 0,
+      "text_effect": "soft_gradient",
+      "text_rect": [
+        138,
+        1017,
+        521,
+        1057
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "EVERY SATURDAY",
+      "rendered_text": "EVERY SATURDAY",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/LeagueSpartan-VariableFont_wght.ttf",
+      "font_size": 42,
+      "tracking_px": 0,
+      "text_effect": "soft_gradient",
+      "text_rect": [
+        159,
+        918,
+        452,
+        950
+      ],
+      "align": "center"
+    }
+  ]
+}

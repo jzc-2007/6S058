@@ -3,7 +3,7 @@ import csv
 import json
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Sequence, Tuple
 
 import cv2
 import numpy as np
@@ -24,6 +24,17 @@ try:
 except Exception:
     HAS_OCR = False
 
+try:
+    import torch
+    import lpips
+
+    HAS_LPIPS = True
+except Exception:
+    HAS_LPIPS = False
+
+_LPIPS_MODEL = None
+_LPIPS_DEVICE = None
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -33,6 +44,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--layout-dir", type=Path, default=Path("outputs/layouts"))
     parser.add_argument("--edit-before-dir", type=Path, default=Path("outputs/edit_before"))
     parser.add_argument("--edit-after-dir", type=Path, default=Path("outputs/edit_after"))
+    parser.add_argument("--edit-before-layout-dir", type=Path, default=Path("outputs/edit_before_layouts"))
     parser.add_argument("--edit-layout-dir", type=Path, default=Path("outputs/edit_layouts"))
     parser.add_argument("--output-csv", type=Path, default=Path("results/metrics.csv"))
     return parser.parse_args()
@@ -86,6 +98,8 @@ def word_recall_from_text(observed: str, expected: List[str]) -> float:
 
 
 def _crop_boxes(layout_path: Path) -> List[Tuple[int, int, int, int]]:
+    if not layout_path.exists():
+        return []
     payload = json.loads(layout_path.read_text(encoding="utf-8"))
     rendered = payload.get("rendered_blocks") or []
     boxes = []
@@ -143,30 +157,84 @@ def contrast_score(image_path: Path, layout_path: Path) -> float:
     return float(np.mean(vals)) if vals else float("nan")
 
 
-def edit_bg_ssim(before_path: Path, after_path: Path, layout_path: Path) -> float:
-    if not HAS_SSIM:
-        return float("nan")
-    if not before_path.exists() or not after_path.exists() or not layout_path.exists():
-        return float("nan")
+def edit_text_mask(shape: Tuple[int, int], layout_paths: Sequence[Path], pad: int = 16) -> np.ndarray:
+    mask = np.zeros(shape, dtype=np.uint8)
+    for layout_path in layout_paths:
+        if not layout_path.exists():
+            continue
+        for x, y, w, h in _crop_boxes(layout_path):
+            x0, y0 = max(0, x - pad), max(0, y - pad)
+            x1, y1 = min(shape[1], x + w + pad), min(shape[0], y + h + pad)
+            mask[y0:y1, x0:x1] = 1
+    return mask
+
+
+def _edit_images(before_path: Path, after_path: Path) -> Tuple[np.ndarray | None, np.ndarray | None]:
+    if not before_path.exists() or not after_path.exists():
+        return None, None
     before = cv2.imread(str(before_path), cv2.IMREAD_COLOR)
     after = cv2.imread(str(after_path), cv2.IMREAD_COLOR)
     if before is None or after is None:
-        return float("nan")
+        return None, None
     if before.shape != after.shape:
         after = cv2.resize(after, (before.shape[1], before.shape[0]))
-    mask = np.ones(before.shape[:2], dtype=np.uint8)
-    for block in load_layout(layout_path):
-        x, y, w, h = block.bbox
-        pad = 12
-        x0, y0 = max(0, x - pad), max(0, y - pad)
-        x1, y1 = min(mask.shape[1], x + w + pad), min(mask.shape[0], y + h + pad)
-        mask[y0:y1, x0:x1] = 0
+    return before, after
+
+
+def edit_bg_ssim(before_path: Path, after_path: Path, layout_paths: Sequence[Path]) -> float:
+    if not HAS_SSIM:
+        return float("nan")
+    before, after = _edit_images(before_path, after_path)
+    if before is None or after is None:
+        return float("nan")
+    text_mask = edit_text_mask(before.shape[:2], layout_paths)
+    bg_mask = text_mask == 0
     before_gray = cv2.cvtColor(before, cv2.COLOR_BGR2GRAY)
     after_gray = cv2.cvtColor(after, cv2.COLOR_BGR2GRAY)
     score, sim_map = ssim(before_gray, after_gray, data_range=255, full=True)
-    if np.any(mask):
-        return float(np.mean(sim_map[mask.astype(bool)]))
+    if np.any(bg_mask):
+        return float(np.mean(sim_map[bg_mask]))
     return float(score)
+
+
+def _lpips_model():
+    global HAS_LPIPS, _LPIPS_MODEL, _LPIPS_DEVICE
+    if not HAS_LPIPS:
+        return None, None
+    if _LPIPS_MODEL is None:
+        try:
+            _LPIPS_DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            _LPIPS_MODEL = lpips.LPIPS(net="alex").to(_LPIPS_DEVICE)
+            _LPIPS_MODEL.eval()
+        except Exception as exc:
+            print(f"[warn] LPIPS initialization failed: {exc}")
+            HAS_LPIPS = False
+            return None, None
+    return _LPIPS_MODEL, _LPIPS_DEVICE
+
+
+def _lpips_tensor(image_bgr: np.ndarray, device) -> Any:
+    rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB).astype(np.float32)
+    tensor = torch.from_numpy(rgb).permute(2, 0, 1).unsqueeze(0)
+    return (tensor / 127.5 - 1.0).to(device)
+
+
+def edit_bg_lpips(before_path: Path, after_path: Path, layout_paths: Sequence[Path]) -> float:
+    model, device = _lpips_model()
+    if model is None or device is None:
+        return float("nan")
+    before, after = _edit_images(before_path, after_path)
+    if before is None or after is None:
+        return float("nan")
+    text_mask = edit_text_mask(before.shape[:2], layout_paths).astype(bool)
+    if np.any(text_mask):
+        before = before.copy()
+        after = after.copy()
+        before[text_mask] = 127
+        after[text_mask] = 127
+    with torch.no_grad():
+        value = model(_lpips_tensor(before, device), _lpips_tensor(after, device))
+    return float(value.item())
 
 
 def mean(values: List[float]) -> float:
@@ -189,6 +257,10 @@ def main() -> None:
         ours = args.ours_dir / f"{sample_id}.png"
         baseline = args.baseline_dir / f"{sample_id}.png"
         layout = args.layout_dir / f"{sample_id}.json"
+        edit_layouts = [
+            args.edit_before_layout_dir / f"{sample_id}.json",
+            args.edit_layout_dir / f"{sample_id}.json",
+        ]
         if not ours.exists() or not layout.exists():
             continue
         blocks = load_layout(layout)
@@ -206,7 +278,12 @@ def main() -> None:
             "edit_bg_ssim": edit_bg_ssim(
                 args.edit_before_dir / f"{sample_id}.png",
                 args.edit_after_dir / f"{sample_id}.png",
-                args.edit_layout_dir / f"{sample_id}.json",
+                edit_layouts,
+            ),
+            "edit_bg_lpips": edit_bg_lpips(
+                args.edit_before_dir / f"{sample_id}.png",
+                args.edit_after_dir / f"{sample_id}.png",
+                edit_layouts,
             ),
         }
         rows.append(row)
@@ -222,6 +299,7 @@ def main() -> None:
         "layout_validity",
         "contrast_proxy",
         "edit_bg_ssim",
+        "edit_bg_lpips",
     ]
     with args.output_csv.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -240,6 +318,8 @@ def main() -> None:
         print("[warn] pytesseract import failed; OCR metrics are NaN.")
     if not HAS_SSIM:
         print("[warn] skimage import failed; edit SSIM metrics are NaN.")
+    if not HAS_LPIPS:
+        print("[warn] lpips/torch import failed; edit LPIPS metrics are NaN.")
 
 
 if __name__ == "__main__":

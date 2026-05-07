@@ -10,3 +10,17 @@ submission.blg
 submission.brf
 submission.log
 submission.out
+
+# Local sync/debug artifacts. The curated Qwen outputs used for figure
+# picking live under outputs_remote/ and are intentionally versioned.
+remote_sync/
+remote_demo/
+outputs_qwen_smoke/
+outputs_qwen_test/
+outputs/local_art_test/
+outputs/local_art_test_layouts/
+outputs/local_new/
+figures/local_art_test/
+figures/local_new/
+prompts/local_new_examples.json
+results/local_new_*

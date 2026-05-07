@@ -13,6 +13,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--background-dir", type=Path, default=Path("outputs/backgrounds"))
     parser.add_argument("--before-dir", type=Path, default=Path("outputs/edit_before"))
     parser.add_argument("--after-dir", type=Path, default=Path("outputs/edit_after"))
+    parser.add_argument("--before-layout-dir", type=Path, default=Path("outputs/edit_before_layouts"))
     parser.add_argument("--layout-dir", type=Path, default=Path("outputs/edit_layouts"))
     parser.add_argument("--num", type=int, default=6)
     parser.add_argument("--style-map", type=Path, default=None)
@@ -37,6 +38,7 @@ def main() -> None:
             item["texts"],
             item.get("category", "poster"),
             args.before_dir / f"{sample_id}.png",
+            args.before_layout_dir / f"{sample_id}.json",
             style_name=style_name,
             layout_prior_path=args.layout_priors,
         )

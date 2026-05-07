@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/edit_after_qwen_seed_886_tool/museum_bauhaus.png",
+  "blocks": [
+    {
+      "text": "BAUHAUS NOW",
+      "role": "title",
+      "bbox": [
+        122,
+        184,
+        489,
+        195
+      ],
+      "color": [
+        245,
+        45,
+        45
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COLOR AND CONSTRUCTION",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        668,
+        552,
+        115
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "MAY 3 - AUGUST 18",
+      "role": "meta",
+      "bbox": [
+        122,
+        852,
+        264,
+        73
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "bauhaus",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "top_left",
+    "tracking": 1,
+    "text_effect": "block_shadow",
+    "accent_color": [
+      17,
+      102,
+      201
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "BAUHAUS NOW",
+      "rendered_text": "BAUHAUS\nNOW",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Bungee-Regular.ttf",
+      "font_size": 90,
+      "tracking_px": 1,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        131,
+        202,
+        601,
+        361
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "COLOR AND CONSTRUCTION",
+      "rendered_text": "COLOR AND\nCONSTRUCTION",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Comfortaa-VariableFont_wght.ttf",
+      "font_size": 58,
+      "tracking_px": 1,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        91,
+        671,
+        612,
+        780
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "MAY 3 - AUGUST 18",
+      "rendered_text": "MAY 3 -\nAUGUST 18",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Comfortaa-VariableFont_wght.ttf",
+      "font_size": 38,
+      "tracking_px": 0,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        145,
+        851,
+        363,
+        926
+      ],
+      "align": "center"
+    }
+  ]
+}

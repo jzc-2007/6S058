@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/ours_qwen_seed_886_tool/education_space.png",
+  "blocks": [
+    {
+      "text": "STARS FOR ALL",
+      "role": "title",
+      "bbox": [
+        107,
+        80,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        240,
+        67
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FAMILY ASTRONOMY NIGHT",
+      "role": "subtitle",
+      "bbox": [
+        176,
+        944,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "MAY 18",
+      "role": "meta",
+      "bbox": [
+        199,
+        760,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "retro_pop",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1,
+    "text_effect": "retro_shadow",
+    "accent_color": [
+      58,
+      215,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "STARS FOR ALL",
+      "rendered_text": "STARS\nFOR ALL",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Bungee-Regular.ttf",
+      "font_size": 110,
+      "tracking_px": 2,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        143,
+        79,
+        653,
+        275
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "FAMILY ASTRONOMY NIGHT",
+      "rendered_text": "FAMILY ASTRONOMY NIGHT",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 46,
+      "tracking_px": 0,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        214,
+        969,
+        674,
+        1012
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "MAY 18",
+      "rendered_text": "MAY 18",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        320,
+        775,
+        445,
+        817
+      ],
+      "align": "center"
+    }
+  ]
+}

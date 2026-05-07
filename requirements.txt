@@ -1,5 +1,5 @@
 accelerate>=1.0.0
-diffusers>=0.33.0
+diffusers>=0.38.0
 datasets>=3.0.0
 einops
 lpips
@@ -9,8 +9,10 @@ opencv-python
 pandas
 pillow
 pytesseract
+psd-tools
 scikit-image
-safetensors
+safetensors>=0.8.0rc0
 torch
+torchao==0.16.0
 torchvision
-transformers>=4.50.0
+transformers>=4.57.1,<5.0

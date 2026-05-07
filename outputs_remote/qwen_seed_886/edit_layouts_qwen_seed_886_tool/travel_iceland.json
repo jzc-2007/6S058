@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/edit_after_qwen_seed_886_tool/travel_iceland.png",
+  "blocks": [
+    {
+      "text": "ICELAND",
+      "role": "title",
+      "bbox": [
+        92,
+        875,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LIGHT UNDER THE NORTH",
+      "role": "subtitle",
+      "bbox": [
+        122,
+        230,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "WINTER 2027",
+      "role": "meta",
+      "bbox": [
+        122,
+        92,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1,
+    "text_effect": "offset",
+    "accent_color": [
+      217,
+      74,
+      45
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ICELAND",
+      "rendered_text": "ICELAND",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/BebasNeue-Regular.ttf",
+      "font_size": 159,
+      "tracking_px": 3,
+      "text_effect": "offset",
+      "text_rect": [
+        169,
+        912,
+        597,
+        1033
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LIGHT UNDER THE NORTH",
+      "rendered_text": "LIGHT UNDER THE NORTH",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 52,
+      "tracking_px": 1,
+      "text_effect": "offset",
+      "text_rect": [
+        138,
+        253,
+        643,
+        301
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "WINTER 2027",
+      "rendered_text": "WINTER 2027",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_effect": "offset",
+      "text_rect": [
+        193,
+        107,
+        419,
+        149
+      ],
+      "align": "center"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/edit_before_qwen_seed_1515_tool/cookbook_cover.png",
+  "blocks": [
+    {
+      "text": "SIMPLE SUPPERS",
+      "role": "title",
+      "bbox": [
+        76,
+        161,
+        567,
+        195
+      ],
+      "color": [
+        248,
+        241,
+        226
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LENA PARK",
+      "role": "subtitle",
+      "bbox": [
+        61,
+        967,
+        386,
+        94
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "EVERYDAY RECIPES",
+      "role": "meta",
+      "bbox": [
+        430,
+        852,
+        264,
+        73
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "editorial_serif",
+  "style_details": {
+    "backing": "none",
+    "align": "left",
+    "layout_template": "editorial",
+    "tracking": 0,
+    "text_effect": "letterpress",
+    "accent_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "SIMPLE SUPPERS",
+      "rendered_text": "SIMPLE\nSUPPERS",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf",
+      "font_size": 110,
+      "tracking_px": 0,
+      "text_effect": "letterpress",
+      "text_rect": [
+        107,
+        166,
+        572,
+        351
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LENA PARK",
+      "rendered_text": "LENA PARK",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 50,
+      "tracking_px": 0,
+      "text_effect": "letterpress",
+      "text_rect": [
+        82,
+        994,
+        354,
+        1033
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "EVERYDAY RECIPES",
+      "rendered_text": "EVERYDAY\nRECIPES",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 39,
+      "tracking_px": 0,
+      "text_effect": "letterpress",
+      "text_rect": [
+        444,
+        857,
+        641,
+        920
+      ],
+      "align": "left"
+    }
+  ]
+}

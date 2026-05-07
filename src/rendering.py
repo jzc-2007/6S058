@@ -12,7 +12,9 @@ from .layout import TextBlock, plan_layout, save_layout
 from .styles import TypographyStyle, get_style
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 FONT_DIRS = [
+    PROJECT_ROOT / "assets" / "fonts",
     Path("/usr/share/fonts"),
     Path("/usr/local/share/fonts"),
     Path("/System/Library/Fonts"),
@@ -41,7 +43,8 @@ def _font_query_keys(name: str) -> list[str]:
     for word in weight_words:
         if key.endswith(word):
             keys.append(key[: -len(word)])
-    return [k for k in keys if k]
+    keys.extend("".join(ch for ch in k if not ch.isdigit()) for k in list(keys))
+    return [k for k in dict.fromkeys(keys) if k]
 
 
 def find_font(preferred: str | None = None, names: Iterable[str] = ()) -> Path:
@@ -176,6 +179,163 @@ def _draw_tracked_multiline(
         yy += box[3] - box[1] + spacing
 
 
+def _text_mask(
+    size: tuple[int, int],
+    xy: tuple[int, int],
+    text: str,
+    font: ImageFont.FreeTypeFont,
+    spacing: int,
+    align: str,
+    tracking: int,
+) -> Image.Image:
+    mask = Image.new("L", size, 0)
+    mask_draw = ImageDraw.Draw(mask)
+    _draw_tracked_multiline(mask_draw, xy, text, font, fill=255, spacing=spacing, align=align, tracking=tracking)
+    return mask
+
+
+def _gradient_patch(size: tuple[int, int], top: tuple[int, int, int], bottom: tuple[int, int, int]) -> Image.Image:
+    width, height = size
+    arr = np.zeros((max(1, height), max(1, width), 4), dtype=np.uint8)
+    for y in range(arr.shape[0]):
+        t = y / max(1, arr.shape[0] - 1)
+        color = [int(top[i] * (1.0 - t) + bottom[i] * t) for i in range(3)]
+        arr[y, :, :3] = color
+        arr[y, :, 3] = 255
+    return Image.fromarray(arr, "RGBA")
+
+
+def _draw_gradient_fill(
+    base: Image.Image,
+    xy: tuple[int, int],
+    text: str,
+    font: ImageFont.FreeTypeFont,
+    spacing: int,
+    align: str,
+    tracking: int,
+    top: tuple[int, int, int],
+    bottom: tuple[int, int, int],
+) -> None:
+    mask = _text_mask(base.size, xy, text, font, spacing, align, tracking)
+    bbox = mask.getbbox()
+    if bbox is None:
+        return
+    x0, y0, x1, y1 = bbox
+    gradient = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    gradient.paste(_gradient_patch((x1 - x0, y1 - y0), top, bottom), (x0, y0))
+    gradient.putalpha(mask)
+    base.alpha_composite(gradient)
+
+
+def _draw_art_text(
+    base: Image.Image,
+    xy: tuple[int, int],
+    text: str,
+    font: ImageFont.FreeTypeFont,
+    block: TextBlock,
+    style: TypographyStyle,
+    spacing: int,
+    align: str,
+    tracking: int,
+) -> None:
+    draw = ImageDraw.Draw(base)
+    effect = style.text_effect
+    accent = style.accent_color or block.color
+    fill = tuple(block.color) + (255,)
+    stroke = tuple(block.stroke_color) + (235,)
+    shadow = tuple(block.shadow_color) + (style.shadow_alpha,)
+    shadow_offset = max(2, font.size // 18)
+
+    if effect in {"retro_shadow", "block_shadow", "offset"}:
+        offset = max(4, font.size // 12)
+        _draw_tracked_multiline(
+            draw,
+            (xy[0] + offset, xy[1] + offset),
+            text,
+            font=font,
+            fill=tuple(accent) + (210,),
+            stroke_width=block.stroke_width,
+            stroke_fill=tuple(block.stroke_color) + (200,),
+            spacing=spacing,
+            align=align,
+            tracking=tracking,
+        )
+        if effect == "retro_shadow":
+            _draw_tracked_multiline(
+                draw,
+                (xy[0] - offset // 2, xy[1] + offset // 2),
+                text,
+                font=font,
+                fill=tuple(block.shadow_color) + (135,),
+                spacing=spacing,
+                align=align,
+                tracking=tracking,
+            )
+    elif effect == "cinema_shadow":
+        _draw_tracked_multiline(
+            draw,
+            (xy[0] + shadow_offset * 2, xy[1] + shadow_offset * 2),
+            text,
+            font=font,
+            fill=shadow,
+            spacing=spacing,
+            align=align,
+            tracking=tracking,
+        )
+    elif effect == "stamp":
+        _draw_tracked_multiline(
+            draw,
+            (xy[0] + 2, xy[1] - 1),
+            text,
+            font=font,
+            fill=tuple(accent) + (130,),
+            spacing=spacing,
+            align=align,
+            tracking=tracking,
+        )
+    elif style.glow or effect == "glow_gradient":
+        for radius, alpha in [(8, 72), (4, 110), (2, 150)]:
+            glow = Image.new("RGBA", base.size, (0, 0, 0, 0))
+            glow_draw = ImageDraw.Draw(glow)
+            _draw_tracked_multiline(
+                glow_draw,
+                xy,
+                text,
+                font=font,
+                fill=tuple(accent) + (alpha,),
+                spacing=spacing,
+                align=align,
+                tracking=tracking,
+            )
+            base.alpha_composite(glow.filter(ImageFilter.GaussianBlur(radius)))
+    else:
+        _draw_tracked_multiline(
+            draw,
+            (xy[0] + shadow_offset, xy[1] + shadow_offset),
+            text,
+            font=font,
+            fill=shadow,
+            spacing=spacing,
+            align=align,
+            tracking=tracking,
+        )
+
+    _draw_tracked_multiline(
+        draw,
+        xy,
+        text,
+        font=font,
+        fill=fill,
+        stroke_width=block.stroke_width,
+        stroke_fill=stroke,
+        spacing=spacing,
+        align=align,
+        tracking=tracking,
+    )
+    if effect in {"foil_gradient", "soft_gradient", "glow_gradient"}:
+        _draw_gradient_fill(base, xy, text, font, spacing, align, tracking, accent, block.color)
+
+
 def _fit_font(
     draw: ImageDraw.ImageDraw,
     text: str,
@@ -288,45 +448,7 @@ def render_text_layer(
         text_rect = (tx + bbox[0], ty + bbox[1], tx + bbox[2], ty + bbox[3])
         _draw_text_backing(image, text_rect, block, style, font.size)
         draw = ImageDraw.Draw(image)
-        shadow_offset = max(2, font.size // 18)
-        if style.glow:
-            for radius, alpha in [(5, 70), (2, 110)]:
-                glow = Image.new("RGBA", image.size, (0, 0, 0, 0))
-                glow_draw = ImageDraw.Draw(glow)
-                _draw_tracked_multiline(
-                    glow_draw,
-                    (tx, ty),
-                    text,
-                    font=font,
-                    fill=tuple(block.shadow_color) + (alpha,),
-                    spacing=spacing,
-                    align=align,
-                    tracking=tracking,
-                )
-                image.alpha_composite(glow.filter(ImageFilter.GaussianBlur(radius)))
-        else:
-            _draw_tracked_multiline(
-                draw,
-                (tx + shadow_offset, ty + shadow_offset),
-                text,
-                font=font,
-                fill=tuple(block.shadow_color) + (style.shadow_alpha,),
-                spacing=spacing,
-                align=align,
-                tracking=tracking,
-            )
-        _draw_tracked_multiline(
-            draw,
-            (tx, ty),
-            text,
-            font=font,
-            fill=tuple(block.color) + (255,),
-            stroke_width=block.stroke_width,
-            stroke_fill=tuple(block.stroke_color) + (230,),
-            spacing=spacing,
-            align=align,
-            tracking=tracking,
-        )
+        _draw_art_text(image, (tx, ty), text, font, block, style, spacing, align, tracking)
         render_blocks.append(
             {
                 "role": block.role,
@@ -335,6 +457,7 @@ def render_text_layer(
                 "font_path": str(role_font_path),
                 "font_size": font.size,
                 "tracking_px": tracking,
+                "text_effect": style.text_effect,
                 "text_rect": [int(v) for v in text_rect],
                 "align": align,
             }
@@ -351,6 +474,8 @@ def render_text_layer(
             "align": style.align,
             "layout_template": style.layout_template,
             "tracking": style.tracking,
+            "text_effect": style.text_effect,
+            "accent_color": style.accent_color,
         }
         payload["rendered_blocks"] = render_blocks
         layout_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")

@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/edit_before_qwen_seed_886_tool/architecture_lecture.png",
+  "blocks": [
+    {
+      "text": "CITIES IN CONCRETE",
+      "role": "title",
+      "bbox": [
+        107,
+        92,
+        567,
+        195
+      ],
+      "color": [
+        245,
+        245,
+        235
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "PUBLIC LECTURE",
+      "role": "subtitle",
+      "bbox": [
+        92,
+        898,
+        522,
+        92
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NOVEMBER 14",
+      "role": "meta",
+      "bbox": [
+        107,
+        529,
+        264,
+        73
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "brutalist_type",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column",
+    "tracking": 2,
+    "text_effect": "block_shadow",
+    "accent_color": [
+      255,
+      74,
+      52
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "CITIES IN CONCRETE",
+      "rendered_text": "CITIES IN\nCONCRETE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Anton-Regular.ttf",
+      "font_size": 94,
+      "tracking_px": 3,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        138,
+        97,
+        506,
+        282
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "PUBLIC LECTURE",
+      "rendered_text": "PUBLIC LECTURE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 55,
+      "tracking_px": 2,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        121,
+        920,
+        487,
+        968
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "NOVEMBER 14",
+      "rendered_text": "NOVEMBER 14",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 43,
+      "tracking_px": 1,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        121,
+        546,
+        357,
+        585
+      ],
+      "align": "left"
+    }
+  ]
+}

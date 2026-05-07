@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/ours_qwen_seed_886_tool/album_static.png",
+  "blocks": [
+    {
+      "text": "STATIC GARDEN",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        96,
+        255,
+        245
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ECHO VALE",
+      "role": "subtitle",
+      "bbox": [
+        115,
+        898,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "OUT NOW",
+      "role": "meta",
+      "bbox": [
+        138,
+        691,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "neon",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1,
+    "text_effect": "glow_gradient",
+    "accent_color": [
+      255,
+      95,
+      211
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "STATIC GARDEN",
+      "rendered_text": "STATIC\nGARDEN",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Monoton-Regular.ttf",
+      "font_size": 110,
+      "tracking_px": 2,
+      "text_effect": "glow_gradient",
+      "text_rect": [
+        91,
+        85,
+        675,
+        304
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "ECHO VALE",
+      "rendered_text": "ECHO VALE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 58,
+      "tracking_px": 1,
+      "text_effect": "glow_gradient",
+      "text_rect": [
+        259,
+        918,
+        507,
+        971
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "OUT NOW",
+      "rendered_text": "OUT NOW",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_effect": "glow_gradient",
+      "text_rect": [
+        241,
+        706,
+        403,
+        748
+      ],
+      "align": "center"
+    }
+  ]
+}

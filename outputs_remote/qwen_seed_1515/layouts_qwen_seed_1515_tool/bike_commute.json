@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/bike_commute.png",
+  "blocks": [
+    {
+      "text": "VELO CITY",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        255,
+        231,
+        168
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "RIDE LIGHTER",
+      "role": "subtitle",
+      "bbox": [
+        356,
+        714,
+        386,
+        94
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SPRING SALE",
+      "role": "meta",
+      "bbox": [
+        368,
+        967,
+        264,
+        73
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "premium_ad",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0,
+    "text_effect": "foil_gradient",
+    "accent_color": [
+      255,
+      248,
+      222
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "VELO CITY",
+      "rendered_text": "VELO\nCITY",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf",
+      "font_size": 130,
+      "tracking_px": 0,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        213,
+        85,
+        554,
+        305
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "RIDE LIGHTER",
+      "rendered_text": "RIDE LIGHTER",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/LeagueSpartan-VariableFont_wght.ttf",
+      "font_size": 56,
+      "tracking_px": 0,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        393,
+        739,
+        704,
+        782
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SPRING SALE",
+      "rendered_text": "SPRING SALE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/LeagueSpartan-VariableFont_wght.ttf",
+      "font_size": 43,
+      "tracking_px": 0,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        384,
+        986,
+        616,
+        1020
+      ],
+      "align": "center"
+    }
+  ]
+}

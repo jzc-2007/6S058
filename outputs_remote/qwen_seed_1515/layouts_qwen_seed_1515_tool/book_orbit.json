@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/book_orbit.png",
+  "blocks": [
+    {
+      "text": "THE LAST ORBIT",
+      "role": "title",
+      "bbox": [
+        76,
+        161,
+        567,
+        195
+      ],
+      "color": [
+        248,
+        241,
+        226
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "MARA VALE",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        668,
+        552,
+        115
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "A NOVEL",
+      "role": "meta",
+      "bbox": [
+        61,
+        852,
+        264,
+        73
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "editorial_serif",
+  "style_details": {
+    "backing": "none",
+    "align": "left",
+    "layout_template": "editorial",
+    "tracking": 0,
+    "text_effect": "letterpress",
+    "accent_color": [
+      255,
+      255,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "THE LAST ORBIT",
+      "rendered_text": "THE LAST\nORBIT",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf",
+      "font_size": 110,
+      "tracking_px": 0,
+      "text_effect": "letterpress",
+      "text_rect": [
+        107,
+        166,
+        619,
+        351
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "MARA VALE",
+      "rendered_text": "MARA VALE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 62,
+      "tracking_px": 0,
+      "text_effect": "letterpress",
+      "text_rect": [
+        106,
+        702,
+        456,
+        749
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "A NOVEL",
+      "rendered_text": "A NOVEL",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 39,
+      "tracking_px": 0,
+      "text_effect": "letterpress",
+      "text_rect": [
+        75,
+        873,
+        243,
+        903
+      ],
+      "align": "left"
+    }
+  ]
+}

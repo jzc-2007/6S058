@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/travel_iceland.png",
+  "blocks": [
+    {
+      "text": "ICELAND",
+      "role": "title",
+      "bbox": [
+        92,
+        783,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LAND OF FIRE AND ICE",
+      "role": "subtitle",
+      "bbox": [
+        122,
+        230,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SUMMER 2026",
+      "role": "meta",
+      "bbox": [
+        122,
+        92,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1,
+    "text_effect": "offset",
+    "accent_color": [
+      217,
+      74,
+      45
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ICELAND",
+      "rendered_text": "ICELAND",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/BebasNeue-Regular.ttf",
+      "font_size": 159,
+      "tracking_px": 3,
+      "text_effect": "offset",
+      "text_rect": [
+        169,
+        820,
+        597,
+        941
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LAND OF FIRE AND ICE",
+      "rendered_text": "LAND OF FIRE AND ICE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 58,
+      "tracking_px": 1,
+      "text_effect": "offset",
+      "text_rect": [
+        144,
+        250,
+        637,
+        303
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SUMMER 2026",
+      "rendered_text": "SUMMER 2026",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_effect": "offset",
+      "text_rect": [
+        181,
+        107,
+        431,
+        149
+      ],
+      "align": "center"
+    }
+  ]
+}

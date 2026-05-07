@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/climate_workshop.png",
+  "blocks": [
+    {
+      "text": "RESILIENT COASTS",
+      "role": "title",
+      "bbox": [
+        107,
+        253,
+        567,
+        195
+      ],
+      "color": [
+        226,
+        246,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COMMUNITY WORKSHOP",
+      "role": "subtitle",
+      "bbox": [
+        26,
+        529,
+        386,
+        94
+      ],
+      "color": [
+        244,
+        250,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "JUNE 12",
+      "role": "meta",
+      "bbox": [
+        107,
+        967,
+        264,
+        73
+      ],
+      "color": [
+        244,
+        250,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "clean_corporate",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column",
+    "tracking": 0,
+    "text_effect": "solid",
+    "accent_color": [
+      104,
+      204,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "RESILIENT COASTS",
+      "rendered_text": "RESILIENT\nCOASTS",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 100,
+      "tracking_px": 0,
+      "text_effect": "solid",
+      "text_rect": [
+        138,
+        257,
+        506,
+        443
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "COMMUNITY WORKSHOP",
+      "rendered_text": "COMMUNITY\nWORKSHOP",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/LeagueSpartan-VariableFont_wght.ttf",
+      "font_size": 52,
+      "tracking_px": 0,
+      "text_effect": "solid",
+      "text_rect": [
+        47,
+        535,
+        315,
+        617
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "JUNE 12",
+      "rendered_text": "JUNE 12",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/LeagueSpartan-VariableFont_wght.ttf",
+      "font_size": 40,
+      "tracking_px": 0,
+      "text_effect": "solid",
+      "text_rect": [
+        121,
+        988,
+        251,
+        1018
+      ],
+      "align": "left"
+    }
+  ]
+}

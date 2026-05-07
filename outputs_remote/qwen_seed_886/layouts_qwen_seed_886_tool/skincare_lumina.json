@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/ours_qwen_seed_886_tool/skincare_lumina.png",
+  "blocks": [
+    {
+      "text": "LUMINA SERUM",
+      "role": "title",
+      "bbox": [
+        123,
+        161,
+        489,
+        195
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "GLOW STARTS HERE",
+      "role": "subtitle",
+      "bbox": [
+        61,
+        967,
+        386,
+        94
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NEW FORMULA",
+      "role": "meta",
+      "bbox": [
+        61,
+        852,
+        264,
+        73
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3,
+    "text_effect": "foil_gradient",
+    "accent_color": [
+      255,
+      255,
+      245
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "LUMINA SERUM",
+      "rendered_text": "LUMINA\nSERUM",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf",
+      "font_size": 112,
+      "tracking_px": 7,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        134,
+        167,
+        600,
+        350
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "GLOW STARTS HERE",
+      "rendered_text": "GLOW STARTS\nHERE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 47,
+      "tracking_px": 2,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        80,
+        976,
+        428,
+        1051
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "NEW FORMULA",
+      "rendered_text": "NEW\nFORMULA",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 36,
+      "tracking_px": 2,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        97,
+        859,
+        288,
+        918
+      ],
+      "align": "center"
+    }
+  ]
+}

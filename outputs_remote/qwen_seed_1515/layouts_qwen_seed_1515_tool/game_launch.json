@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/game_launch.png",
+  "blocks": [
+    {
+      "text": "GATE OF ASH",
+      "role": "title",
+      "bbox": [
+        107,
+        80,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        240,
+        67
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BEGIN THE QUEST",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        668,
+        552,
+        115
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "AVAILABLE NOW",
+      "role": "meta",
+      "bbox": [
+        138,
+        529,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "retro_pop",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1,
+    "text_effect": "retro_shadow",
+    "accent_color": [
+      58,
+      215,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "GATE OF ASH",
+      "rendered_text": "GATE OF\nASH",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Bungee-Regular.ttf",
+      "font_size": 110,
+      "tracking_px": 2,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        149,
+        79,
+        647,
+        275
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "BEGIN THE QUEST",
+      "rendered_text": "BEGIN THE QUEST",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 71,
+      "tracking_px": 1,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        114,
+        688,
+        590,
+        762
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "AVAILABLE NOW",
+      "rendered_text": "AVAILABLE NOW",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        187,
+        544,
+        457,
+        586
+      ],
+      "align": "center"
+    }
+  ]
+}

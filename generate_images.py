@@ -8,7 +8,11 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 
-NEGATIVE_TEXT = "text, letters, words, logo, watermark, signature, typography, caption"
+NEGATIVE_TEXT = (
+    "text, letters, words, logo, watermark, signature, typography, caption, numbers, "
+    "signage, label, poster title, Chinese characters, readable text, pseudo text"
+)
+QWEN_POSITIVE_MAGIC = "high-quality cinematic composition, detailed visual design."
 
 
 def parse_args() -> argparse.Namespace:
@@ -17,11 +21,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--mode", choices=["backgrounds", "baselines"], default="backgrounds")
     parser.add_argument("--provider", choices=["diffusers", "dummy"], default="diffusers")
     parser.add_argument("--model-id", default="runwayml/stable-diffusion-v1-5")
+    parser.add_argument("--model-family", choices=["auto", "sd", "qwen"], default="auto")
     parser.add_argument("--output-root", type=Path, default=Path("outputs"))
     parser.add_argument("--num", type=int, default=None)
     parser.add_argument("--seed", type=int, default=123)
     parser.add_argument("--steps", type=int, default=30)
+    parser.add_argument("--width", type=int, default=None)
+    parser.add_argument("--height", type=int, default=None)
     parser.add_argument("--guidance-scale", type=float, default=7.0)
+    parser.add_argument("--true-cfg-scale", type=float, default=4.0)
+    parser.add_argument("--cpu-offload", choices=["auto", "on", "off"], default="auto")
+    parser.add_argument("--qwen-positive-magic", type=str, default=QWEN_POSITIVE_MAGIC)
     return parser.parse_args()
 
 
@@ -53,22 +63,84 @@ def dummy_image(width: int, height: int, seed: int, title: str) -> Image.Image:
     return pil
 
 
-def load_pipeline(model_id: str):
+def infer_model_family(model_id: str, requested: str) -> str:
+    if requested != "auto":
+        return requested
+    name = model_id.lower()
+    if "qwen" in name:
+        return "qwen"
+    return "sd"
+
+
+def load_pipeline(model_id: str, model_family: str, cpu_offload: str):
     import torch
-    from diffusers import AutoPipelineForText2Image
 
     dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
-    pipe = AutoPipelineForText2Image.from_pretrained(
-        model_id,
-        torch_dtype=dtype,
-        use_safetensors=True,
-        variant="fp16" if "xl" in model_id.lower() else None,
-    )
+    if model_family == "qwen":
+        from diffusers import DiffusionPipeline
+
+        is_fp8 = "fp8" in model_id.lower()
+        qwen_kwargs: Dict[str, Any] = {
+            "torch_dtype": dtype,
+            "use_safetensors": not is_fp8,
+        }
+        if is_fp8 and torch.cuda.is_available():
+            qwen_kwargs["device_map"] = "cuda"
+        pipe = DiffusionPipeline.from_pretrained(
+            model_id,
+            **qwen_kwargs,
+        )
+    else:
+        from diffusers import AutoPipelineForText2Image
+
+        pipe = AutoPipelineForText2Image.from_pretrained(
+            model_id,
+            torch_dtype=dtype,
+            use_safetensors=True,
+            variant="fp16" if "xl" in model_id.lower() else None,
+        )
+
+    has_device_map = getattr(pipe, "hf_device_map", None) is not None
+    use_offload = cpu_offload == "on" or (cpu_offload == "auto" and model_family == "qwen")
     if torch.cuda.is_available():
-        pipe = pipe.to("cuda")
+        if has_device_map:
+            pass
+        elif use_offload and hasattr(pipe, "enable_model_cpu_offload"):
+            pipe.enable_model_cpu_offload()
+        else:
+            pipe = pipe.to("cuda")
     if hasattr(pipe, "enable_attention_slicing"):
         pipe.enable_attention_slicing()
+    if hasattr(pipe, "enable_vae_tiling"):
+        pipe.enable_vae_tiling()
+    if hasattr(pipe, "enable_vae_slicing"):
+        pipe.enable_vae_slicing()
     return pipe
+
+
+def build_generation_kwargs(
+    args: argparse.Namespace,
+    model_family: str,
+    prompt: str,
+    width: int,
+    height: int,
+    generator: Any,
+) -> Dict[str, Any]:
+    kwargs: Dict[str, Any] = {
+        "prompt": prompt,
+        "width": width,
+        "height": height,
+        "num_inference_steps": args.steps,
+        "generator": generator,
+    }
+    if model_family == "qwen":
+        kwargs["true_cfg_scale"] = args.true_cfg_scale
+        kwargs["negative_prompt"] = NEGATIVE_TEXT if args.mode == "backgrounds" else " "
+    else:
+        kwargs["guidance_scale"] = args.guidance_scale
+        if args.mode == "backgrounds":
+            kwargs["negative_prompt"] = NEGATIVE_TEXT
+    return kwargs
 
 
 def main() -> None:
@@ -81,35 +153,29 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     pipe = None
+    model_family = infer_model_family(args.model_id, args.model_family)
     if args.provider == "diffusers":
-        pipe = load_pipeline(args.model_id)
+        pipe = load_pipeline(args.model_id, model_family, args.cpu_offload)
 
     for idx, item in enumerate(items):
         sample_id = item["id"]
-        width = int(item.get("width", 768))
-        height = int(item.get("height", 1152))
+        width = int(args.width or item.get("width", 768))
+        height = int(args.height or item.get("height", 1152))
         out_path = out_dir / f"{sample_id}.png"
         if out_path.exists():
             print(f"[skip] {out_path}")
             continue
 
         prompt = item["background_prompt"] if args.mode == "backgrounds" else item["baseline_prompt"]
+        if model_family == "qwen" and args.qwen_positive_magic:
+            prompt = f"{prompt}, {args.qwen_positive_magic}"
         if args.provider == "dummy":
             image = dummy_image(width, height, args.seed + idx, sample_id)
         else:
             import torch
 
             generator = torch.Generator(device="cuda" if torch.cuda.is_available() else "cpu").manual_seed(args.seed + idx)
-            kwargs = {
-                "prompt": prompt,
-                "width": width,
-                "height": height,
-                "num_inference_steps": args.steps,
-                "guidance_scale": args.guidance_scale,
-                "generator": generator,
-            }
-            if args.mode == "backgrounds":
-                kwargs["negative_prompt"] = NEGATIVE_TEXT
+            kwargs = build_generation_kwargs(args, model_family, prompt, width, height, generator)
             image = pipe(**kwargs).images[0]
 
         image.save(out_path)

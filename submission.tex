@@ -31,7 +31,7 @@ Massachusetts Institute of Technology\\
 \maketitle
 
 \begin{abstract}
-Text-to-image diffusion models can synthesize visually rich poster-like images, but they remain unreliable when the image must contain exact, editable, and well-composed text. We study this failure mode in text-heavy poster generation and propose a layered pipeline that separates visual synthesis from typography. A diffusion model first generates a no-text background; a saliency- and contrast-aware layout module places structured text boxes; a learned LoRA-style adapter selects a typography style; and a deterministic renderer produces the final typography layer with font fitting, strokes, shadows, and editable layout metadata. To improve visual diversity and spatial reasoning, we train an additional poster-design prior on 102K GenPoster-100K annotations, yielding 3.6M positive/negative text-box examples for layout placement and a 19-style typography adapter. On 24 poster-style prompts, our final renderer produces exact requested strings by construction, achieves 24/24 overlap-free layouts, and supports text edits with unchanged backgrounds. Our results suggest that treating typography as a structured layer is a practical path toward controllable text-heavy visual synthesis.
+Text-to-image diffusion models can synthesize visually rich poster-like images, but they remain unreliable when the image must contain exact, editable, and well-composed text. We study this failure mode in text-heavy poster generation and propose a layered pipeline that separates visual synthesis from typography. Qwen-Image first generates a no-text background; a saliency- and contrast-aware layout module places structured text boxes; a learned typography-tool router selects fonts and display effects; and a deterministic renderer produces the final typography layer with strokes, shadows, gradients, local backing, and editable layout metadata. To improve visual diversity and spatial reasoning, we train poster-design priors on GenPoster-100K annotations and a weakly supervised tool router on 99,996 style examples. On 24 poster-style prompts, our final renderer supports text edits with mean outside-text SSIM 0.997 and LPIPS 0.0049, while maintaining valid layouts. Our results suggest that treating typography as a structured layer is a practical path toward controllable text-heavy visual synthesis.
 \end{abstract}
 
 \section{Introduction}
@@ -40,7 +40,7 @@ Modern text-to-image (T2I) diffusion models such as latent diffusion models~\cit
 
 We address this setting through \emph{layered typography-aware poster generation}. Instead of asking a diffusion model to jointly invent imagery and rasterize text, we split the problem into background synthesis and structured typography. The model generates the visual scene without text; a layout planner selects candidate text regions; and a renderer writes exact strings as an editable text layer. The final output is both a raster poster and a JSON layout containing text, bounding boxes, colors, and roles. This design is deliberately pragmatic: it uses diffusion models for the component where they are strongest and uses structured rendering for the component where exactness matters most.
 
-The project makes three contributions. First, we implement an end-to-end pipeline for poster generation with editable text layers. Second, we train compact modules: a layout ranker, a GenPoster-trained text-box prior, and a LoRA-style adapter that chooses among multiple typography styles. Third, we evaluate with layout validity, contrast, edit-preservation metrics, style diversity figures, and qualitative comparisons to direct T2I prompting. In the final version, we also replace the early black-band typography with local backing modes, underlines, side rules, and no-backing styles learned from real poster layouts. Although the approach is not an end-to-end text-rendering diffusion model, it produces a substantially more reliable system for the specific design task we target.
+The project makes three contributions. First, we implement an end-to-end pipeline for poster generation with editable text layers. Second, we train compact modules: a layout ranker, a GenPoster-trained text-box prior, and a typography-tool router that chooses among multiple font/effect presets. Third, we evaluate with edit-preservation metrics, layout validity, style-router accuracy against a majority baseline, style diversity figures, and qualitative comparisons to direct T2I prompting. In the final version, we replace the early black-band typography with open-source display fonts and reusable effects such as neon glow, foil gradients, retro shadows, block shadows, letterpress, and stamp-like rendering. Although the approach is not an end-to-end text-rendering diffusion model, it produces a substantially more reliable system for the specific design task we target.
 
 \section{Related Work}
 
@@ -65,7 +65,7 @@ PosterLayout~\cite{hsu2023posterlayout}, CGL-GAN~\cite{zhou2022cgl}, and AutoPos
 Given a prompt $p$ and text strings $\mathcal{T}=\{t_i\}_{i=1}^{n}$, our goal is to produce a poster image $I$ and a structured layout $L=\{(t_i, b_i, r_i, c_i)\}_{i=1}^{n}$, where $b_i$ is a bounding box, $r_i$ is a role such as title or metadata, and $c_i$ is a foreground color.
 
 \paragraph{Background generation.}
-For each poster prompt, we generate a background image using Stable Diffusion v1.5~\cite{rombach2022ldm}. The background prompt explicitly excludes text, letters, watermarks, and logos. For comparison, we also generate a direct T2I baseline whose prompt asks the model to render the exact requested text inside the poster.
+For each poster prompt, we generate a background image using Qwen-Image. The background prompt describes only the visual scene and explicitly excludes text, letters, watermarks, signage, numbers, and logos. For comparison, we also generate a direct T2I baseline with the same base model, but its prompt asks the model to render the exact requested text inside the poster. Thus the comparison isolates two uses of the same image generator: direct rasterized poster generation versus no-text background synthesis followed by structured typography.
 
 \paragraph{Candidate layout scoring.}
 For title, subtitle, and metadata roles, we enumerate candidate boxes at several vertical anchors and horizontal offsets. Each candidate receives a hand-designed score:
@@ -77,8 +77,8 @@ where $E(b)$ is mean Sobel edge density inside the box, $O(b)$ penalizes overlap
 \paragraph{Learned layout ranker.}
 We train a small MLP to predict the normalized candidate score. Each candidate is represented by 14 features: normalized $(x,y,w,h)$, normalized area, local edge mean and standard deviation, local luminance mean and standard deviation, normalized margin, distance to role-preferred vertical position, and a three-dimensional role one-hot vector. The network has two hidden layers with 64 and 32 units and is trained with mean-squared error. This ranker is not required for the deterministic fallback, but it provides a learned layout component and a natural bridge toward larger learned design models.
 
-\paragraph{LoRA-style typography adapter.}
-The first version of the system used a single high-contrast black-band style, which improved OCR but made outputs visually repetitive. We therefore add a style registry with 19 typography styles: classic travel, cinematic, premium advertisement, Bauhaus, neon, literary, technology, sport, editorial serif, modern minimal, playful social, clean corporate, organic market, luxury fashion, retro pop, handmade marker, script invite, brutalist type, and space age. A low-rank adapter predicts which style to apply from prompt keywords, poster category, text-length statistics, and background image statistics. The adapter uses two frozen base linear layers augmented with trainable low-rank updates, followed by a trainable classification head. The selected style controls text color, body/title scale, stroke, shadow, font family, alignment, layout template, letter spacing, and local backing mode.
+\paragraph{Typography-tool router.}
+The first version of the system used a single high-contrast black-band style, which improved OCR but made outputs visually repetitive. We therefore add a tool registry with 19 typography presets: classic travel, cinematic, premium advertisement, Bauhaus, neon, literary, technology, sport, editorial serif, modern minimal, playful social, clean corporate, organic market, luxury fashion, retro pop, handmade marker, script invite, brutalist type, and space age. Each preset selects a layout template, font family, color palette, stroke width, shadow, tracking, backing mode, and display effect. The effects are implemented as deterministic rendering tools, not opaque online APIs: neon glow, foil or soft gradients, retro offset shadows, block shadows, letterpress, and stamp-like overlays. A small router predicts the preset from prompt keywords, category, text-length statistics, and weak design labels.
 
 \paragraph{Spatial refinement.}
 The final system adds a template-aware spatial refinement pass. Candidate boxes are sized as a function of text length, clamped to safe margins, and augmented with poster-like anchor layouts. The scorer uses template-specific preferred vertical positions instead of one global title preference, and it penalizes both overlap and near-collisions between rendered text regions. This prevents bottom-title, editorial, and left-column styles from collapsing to the same layout and improves font-size hierarchy.
@@ -95,47 +95,43 @@ The selected text boxes are rendered with a deterministic FreeType-based rendere
 We use 24 poster-style prompts spanning travel, film, product advertising, museum exhibitions, concerts, books, restaurants, technology events, fitness, education, beauty, music, food markets, architecture, transportation, games, fashion, photography, charity, board games, and cookbooks. Each prompt contains three text strings and an edited variant. For the final style/layout upgrade, we additionally train from GenPoster-100K metadata: 102,703 poster annotations, 102,699 with text layers, and 3,604,506 positive/negative layout examples.
 
 \paragraph{Baselines.}
-The main baseline is direct T2I generation with the same Stable Diffusion model. The baseline prompt asks the model to produce the poster with the exact requested text. This is a strong practical baseline because it matches how users commonly attempt text-heavy image generation.
+The main baseline is direct T2I generation with the same Qwen-Image model. The baseline prompt asks the model to produce the poster with the exact requested text. This is a strong practical baseline because it matches how users commonly attempt text-heavy image generation: one prompt requests both imagery and typography.
 
 \paragraph{Metrics.}
-We report rendered text exactness, layout validity, overlap-free layout rate, a contrast proxy, title font-size statistics, and edit background preservation. Layout validity is the fraction of boxes that are in-bounds and non-overlapping. Edit preservation is SSIM~\cite{wang2004ssim} outside text boxes before and after changing the strings when the SSIM package is available. We treat OCR as a diagnostic rather than a primary metric because Tesseract~\cite{smith2007tesseract} is sensitive to local installation, stylized display fonts, and textured poster backgrounds.
+We report rendered text exactness, layout validity, a contrast proxy, style-router accuracy, and edit background preservation. Layout validity is the fraction of boxes that are in-bounds and non-overlapping. Edit preservation is measured across the 24 prompt/edit pairs by masking the union of before- and after-edit text boxes, then computing SSIM~\cite{wang2004ssim} and LPIPS outside the masked regions. We treat OCR as a diagnostic rather than a primary metric because Tesseract~\cite{smith2007tesseract} is sensitive to local installation, stylized display fonts, and textured poster backgrounds.
 
 \begin{table}[t]
     \centering
-    \caption{Final spatial diagnostics over 24 prompts. The renderer writes exact requested strings by construction and the spatial refinement produces non-overlapping typography layouts.}
+    \caption{Main quantitative diagnostics over 24 prompts and edited variants. Edit preservation is measured outside the union of before/after text-box masks.}
     \label{tab:main}
     \begin{tabular}{lc}
         \toprule
         Metric & Value \\
         \midrule
-        Rendered text exact & 1.000 \\
         Layout validity & 1.000 \\
-        Overlap-free layouts & 24 / 24 \\
-        Mean title font size & 113.9 px \\
-        Minimum title font size & 69.0 px \\
-        Contrast proxy & 0.519 \\
+        Contrast proxy & 0.526 \\
+        Edit outside-mask SSIM $\uparrow$ & 0.997 \\
+        Edit outside-mask LPIPS $\downarrow$ & 0.0049 \\
+        Edited prompt pairs & 24 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
 \begin{table}[t]
     \centering
-    \caption{Final GenPoster-trained style and layout prior. The layout model learns a real-poster text-box prior; the style adapter uses weak pseudo-labels, so its accuracy is not a human aesthetic score.}
+    \caption{Learned layout and typography-tool priors. The router uses weak pseudo-labels, so its accuracy measures tool-selection consistency rather than human aesthetic preference.}
     \label{tab:style}
     \begin{tabular}{lc}
         \toprule
         Quantity & Value \\
         \midrule
-        Poster annotations & 102,703 \\
+        Poster annotations for layout & 102,703 \\
         Layout examples & 3,604,506 \\
-        Number of styles & 19 \\
-        LoRA rank & 24 \\
-        Layout epochs & 120 \\
-        Style epochs & 200 \\
         Layout validation accuracy & 0.975 \\
-        Style validation accuracy & 0.667 \\
-        Mean title font size & 113.9 px \\
-        Overlap-free layouts & 24 / 24 \\
+        Router training examples & 99,996 \\
+        Typography-tool presets & 19 \\
+        Router validation accuracy & 0.789 \\
+        Majority-class baseline & 0.398 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -162,25 +158,27 @@ We report rendered text exactness, layout validity, overlap-free layout rate, a 
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=0.94\linewidth,height=0.78\textheight,keepaspectratio]{figures/qualitative_grid_spatial.png}
-    \caption{\textbf{Qualitative comparison.} Direct T2I baselines often produce pseudo-text or incorrect strings. Our method uses the same kind of generated visual background but renders the requested typography as a structured layer.}
+    \includegraphics[width=0.96\linewidth,height=0.72\textheight,keepaspectratio]{figures/qualitative_grid.png}
+    \caption{\textbf{Qualitative comparison.} Each group shows a no-text Qwen background, a direct Qwen T2I poster baseline, and our layered result. Direct T2I baselines are visually strong but often introduce extra text, pseudo-text, or non-editable raster typography. Our method uses generated backgrounds but renders the requested typography as a structured layer.}
     \label{fig:qual}
 \end{figure*}
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=0.88\linewidth,height=0.72\textheight,keepaspectratio]{figures/spatial_style_grid.png}
-    \caption{\textbf{Learned style selection.} The GenPoster-trained prior and low-rank style adapter select different typography styles and layout templates for different poster categories, avoiding the single-style black-band appearance of the first prototype.}
+    \includegraphics[width=0.98\linewidth,height=0.76\textheight,keepaspectratio]{figures/style_grid_qwen_seed_886_tool.png}
+    \caption{\textbf{Typography-tool routing.} The learned router selects different font families, layout templates, and display effects for different poster categories, avoiding the single-style black-band appearance of the first prototype.}
     \label{fig:style}
 \end{figure*}
 
-Table~\ref{tab:main} shows that the final spatial renderer preserves exact requested strings and produces valid non-overlapping text layouts for all 24 prompts. This matches the qualitative behavior in Figure~\ref{fig:qual}: the direct T2I baseline frequently invents glyph-like marks or unrelated words, while our method draws the requested strings from structured input text rather than asking the image generator to hallucinate typography.
+Our main empirical claim is edit preservation. Table~\ref{tab:main} reports mean SSIM and LPIPS outside the union of before- and after-edit text-box masks across 24 prompt/edit pairs. The outside-mask SSIM is 0.997 and LPIPS is 0.0049, showing that changing a title, subtitle, date, or callout leaves the generated background effectively unchanged. Because the final text is rendered from structured strings, rendered text exactness is 1.000 by construction; we therefore treat exactness as a system property rather than the central quantitative result.
 
-The edit results in Figure~\ref{fig:edit} highlight the main advantage of the layered representation. The same background can be reused while strings are changed, so the non-text region remains identical up to rasterization.
+The second claim is that the poster-data layout prior is useful for practical typography placement. The GenPoster-trained layout model reaches 0.975 validation accuracy over real and negative text boxes, and the final selected seed obtains layout validity 1.000 over the 24 prompt set. The direct T2I baseline in Figure~\ref{fig:qual} often creates plausible poster-like raster text, but it also adds unwanted labels, small glyphs, or ``4K''-style artifacts and provides no editable layout.
+
+The third claim is style diversity through tool routing. The router reaches 0.789 validation accuracy against weak GenPoster-derived labels, compared with a 0.398 majority-class baseline. Figure~\ref{fig:style} shows the resulting visual variety: the system routes prompts to display fonts and effects such as condensed travel type, neon/retro shadows, editorial serif, Bauhaus geometry, luxury serif, and sport block lettering.
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=0.72\linewidth,height=0.78\textheight,keepaspectratio]{figures/edit_examples_spatial.png}
+    \includegraphics[width=0.88\linewidth,height=0.72\textheight,keepaspectratio]{figures/edit_examples.png}
     \caption{\textbf{Text editing.} Since text is a structured layer, changing a subtitle, date, or callout does not require regenerating the background.}
     \label{fig:edit}
 \end{figure*}
@@ -212,13 +210,24 @@ We compare the full system to two earlier variants on the original ten-prompt di
     \label{fig:training}
 \end{figure}
 
+\section{Supplementary Diagnostics}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.98\linewidth]{figures/tool_router_confusion.png}
+    \caption{\textbf{Typography-tool router confusion matrix.} Rows are weak GenPoster-derived target styles and columns are predicted tool presets. The router is not a human aesthetic judge; it is a compact controller that maps prompt/design cues to reusable typography tools.}
+    \label{fig:confusion}
+\end{figure}
+
+Figure~\ref{fig:confusion} gives the supplementary confusion matrix requested for the tool router. The main confusions reflect the weak-label construction: modern minimal, cinematic, playful social, and retro pop are broad buckets, while rare classes such as space age and brutalist type have very limited support. This supports our interpretation of the router as a diversity controller rather than a definitive style classifier.
+
 \section{Limitations}
 
-Our method is a layered design system rather than a fully end-to-end diffusion model. It does not learn kerning, curved text, custom font generation, or complex multi-line hierarchy at the level of a professional design tool. The GenPoster style labels are weakly supervised from metadata and prompt heuristics rather than human aesthetic preferences, so the adapter is best understood as a diversity controller rather than a definitive design critic. OCR is also an imperfect proxy: Tesseract can miss words that are visually correct to a human reader, especially when text is small, stylized, or placed on textured backgrounds. Still, for time-limited text-heavy design tasks, the layered approach offers a reliable tradeoff between visual quality, exact text, style control, and editability.
+Our method is a layered design system rather than a fully end-to-end diffusion model. It does not learn kerning, curved text, custom font generation, or complex multi-line hierarchy at the level of a professional design tool. The Qwen background generator can occasionally insert unwanted text even when the background prompt forbids it, so strict no-text background generation remains imperfect. The GenPoster style labels are weakly supervised from metadata and prompt heuristics rather than human aesthetic preferences, so the router is best understood as a diversity controller rather than a definitive design critic. OCR is also an imperfect proxy: Tesseract can miss words that are visually correct to a human reader, especially when text is small, stylized, or placed on textured backgrounds. Still, for time-limited text-heavy design tasks, the layered approach offers a reliable tradeoff between visual quality, exact text, style control, and editability.
 
 \section{Conclusion}
 
-We presented a typography-aware poster generation pipeline that separates background synthesis from editable text rendering. The approach substantially improves exactness over direct T2I prompting and supports stable edits without background regeneration. A lightweight trained layout ranker and a LoRA-style adapter provide learned control over placement and visual style, while ablations show how saliency and contrast cues contribute to practical typography placement. More broadly, the project suggests that text-heavy visual synthesis should expose structured, editable layers rather than treating all visual content as a single raster generated from a prompt.
+We presented a typography-aware poster generation pipeline that separates background synthesis from editable text rendering. The approach supports stable edits without background regeneration and avoids asking a T2I model to rasterize exact, editable typography. A lightweight trained layout ranker, a GenPoster layout prior, and a typography-tool router provide learned control over placement and visual style, while ablations show how saliency and contrast cues contribute to practical typography placement. More broadly, the project suggests that text-heavy visual synthesis should expose structured, editable layers rather than treating all visual content as a single raster generated from a prompt.
 
 \section{Use of Generative AI}
 

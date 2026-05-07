@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/ours_qwen_seed_886_tool/food_ramen.png",
+  "blocks": [
+    {
+      "text": "MIDNIGHT RAMEN",
+      "role": "title",
+      "bbox": [
+        38,
+        230,
+        675,
+        195
+      ],
+      "color": [
+        255,
+        240,
+        67
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "GRAND OPENING",
+      "role": "subtitle",
+      "bbox": [
+        92,
+        898,
+        522,
+        92
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "BOWLS FROM $12",
+      "role": "meta",
+      "bbox": [
+        199,
+        760,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "retro_pop",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1,
+    "text_effect": "retro_shadow",
+    "accent_color": [
+      58,
+      215,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "MIDNIGHT RAMEN",
+      "rendered_text": "MIDNIGHT\nRAMEN",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Bungee-Regular.ttf",
+      "font_size": 110,
+      "tracking_px": 2,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        51,
+        231,
+        700,
+        424
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "GRAND OPENING",
+      "rendered_text": "GRAND OPENING",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 57,
+      "tracking_px": 1,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        171,
+        918,
+        535,
+        970
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "BOWLS FROM $12",
+      "rendered_text": "BOWLS FROM $12",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_effect": "retro_shadow",
+      "text_rect": [
+        233,
+        772,
+        533,
+        820
+      ],
+      "align": "center"
+    }
+  ]
+}

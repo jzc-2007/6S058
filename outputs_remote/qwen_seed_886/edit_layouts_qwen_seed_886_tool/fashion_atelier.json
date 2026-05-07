@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/edit_after_qwen_seed_886_tool/fashion_atelier.png",
+  "blocks": [
+    {
+      "text": "ATELIER LINE",
+      "role": "title",
+      "bbox": [
+        76,
+        69,
+        489,
+        195
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "WINTER COLLECTION",
+      "role": "subtitle",
+      "bbox": [
+        356,
+        714,
+        386,
+        94
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "BOOK A FITTING",
+      "role": "meta",
+      "bbox": [
+        430,
+        967,
+        264,
+        73
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3,
+    "text_effect": "foil_gradient",
+    "accent_color": [
+      255,
+      255,
+      245
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ATELIER LINE",
+      "rendered_text": "ATELIER\nLINE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf",
+      "font_size": 106,
+      "tracking_px": 6,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        85,
+        80,
+        555,
+        252
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "WINTER COLLECTION",
+      "rendered_text": "WINTER\nCOLLECTION",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 47,
+      "tracking_px": 2,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        386,
+        722,
+        712,
+        799
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "BOOK A FITTING",
+      "rendered_text": "BOOK A\nFITTING",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 36,
+      "tracking_px": 2,
+      "text_effect": "foil_gradient",
+      "text_rect": [
+        481,
+        973,
+        642,
+        1033
+      ],
+      "align": "center"
+    }
+  ]
+}

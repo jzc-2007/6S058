@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/tea_ceremony.png",
+  "blocks": [
+    {
+      "text": "MOUNTAIN TEA",
+      "role": "title",
+      "bbox": [
+        123,
+        161,
+        489,
+        195
+      ],
+      "color": [
+        255,
+        244,
+        231
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FIRST FLUSH",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        668,
+        552,
+        115
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "LIMITED HARVEST",
+      "role": "meta",
+      "bbox": [
+        368,
+        852,
+        264,
+        73
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "script_invite",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0,
+    "text_effect": "soft_gradient",
+    "accent_color": [
+      255,
+      215,
+      191
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "MOUNTAIN TEA",
+      "rendered_text": "MOUNTAIN\nTEA",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Lobster-Regular.ttf",
+      "font_size": 92,
+      "tracking_px": 0,
+      "text_effect": "soft_gradient",
+      "text_rect": [
+        132,
+        171,
+        602,
+        346
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "FIRST FLUSH",
+      "rendered_text": "FIRST FLUSH",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 55,
+      "tracking_px": 0,
+      "text_effect": "soft_gradient",
+      "text_rect": [
+        185,
+        704,
+        518,
+        747
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "LIMITED HARVEST",
+      "rendered_text": "LIMITED\nHARVEST",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/EBGaramond-VariableFont_wght.ttf",
+      "font_size": 35,
+      "tracking_px": 0,
+      "text_effect": "soft_gradient",
+      "text_rect": [
+        420,
+        858,
+        579,
+        918
+      ],
+      "align": "center"
+    }
+  ]
+}

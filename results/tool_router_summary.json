@@ -1,0 +1,314 @@
+{
+  "num_examples": 99996,
+  "feature_dim": 66,
+  "device": "cuda",
+  "epochs": 120,
+  "runs": [
+    {
+      "hidden": 96,
+      "seed": 13,
+      "val_acc": 0.7869333624839783,
+      "val_loss": 0.42750659584999084,
+      "majority_baseline": 0.397
+    },
+    {
+      "hidden": 96,
+      "seed": 23,
+      "val_acc": 0.7768000364303589,
+      "val_loss": 0.4283042550086975,
+      "majority_baseline": 0.4022
+    },
+    {
+      "hidden": 96,
+      "seed": 47,
+      "val_acc": 0.7766000032424927,
+      "val_loss": 0.4369875192642212,
+      "majority_baseline": 0.3947333333333333
+    },
+    {
+      "hidden": 96,
+      "seed": 71,
+      "val_acc": 0.7887333631515503,
+      "val_loss": 0.4320920407772064,
+      "majority_baseline": 0.39753333333333335
+    },
+    {
+      "hidden": 160,
+      "seed": 13,
+      "val_acc": 0.7838000059127808,
+      "val_loss": 0.43060797452926636,
+      "majority_baseline": 0.397
+    },
+    {
+      "hidden": 160,
+      "seed": 23,
+      "val_acc": 0.7866666913032532,
+      "val_loss": 0.43191343545913696,
+      "majority_baseline": 0.4022
+    },
+    {
+      "hidden": 160,
+      "seed": 47,
+      "val_acc": 0.7753999829292297,
+      "val_loss": 0.4370864927768707,
+      "majority_baseline": 0.3947333333333333
+    },
+    {
+      "hidden": 160,
+      "seed": 71,
+      "val_acc": 0.7747333645820618,
+      "val_loss": 0.4308338165283203,
+      "majority_baseline": 0.39753333333333335
+    },
+    {
+      "hidden": 256,
+      "seed": 13,
+      "val_acc": 0.7855333685874939,
+      "val_loss": 0.430949330329895,
+      "majority_baseline": 0.397
+    },
+    {
+      "hidden": 256,
+      "seed": 23,
+      "val_acc": 0.7775333523750305,
+      "val_loss": 0.4562615752220154,
+      "majority_baseline": 0.4022
+    },
+    {
+      "hidden": 256,
+      "seed": 47,
+      "val_acc": 0.7805333137512207,
+      "val_loss": 0.44106626510620117,
+      "majority_baseline": 0.3947333333333333
+    },
+    {
+      "hidden": 256,
+      "seed": 71,
+      "val_acc": 0.7820000052452087,
+      "val_loss": 0.43648484349250793,
+      "majority_baseline": 0.39753333333333335
+    }
+  ],
+  "best_hidden": 96,
+  "best_seed": 71,
+  "best_val_acc": 0.7887333631515503,
+  "majority_baseline": 0.39753333333333335,
+  "weak_label_counts": {
+    "bauhaus": 5703,
+    "modern_minimal": 39599,
+    "sport": 6152,
+    "neon": 3161,
+    "editorial_serif": 2437,
+    "luxury_fashion": 3307,
+    "cinematic": 11581,
+    "tech": 716,
+    "retro_pop": 4567,
+    "premium_ad": 4087,
+    "organic_market": 5755,
+    "playful_social": 6495,
+    "clean_corporate": 2376,
+    "classic_travel": 1781,
+    "script_invite": 1993,
+    "brutalist_type": 281,
+    "space_age": 5
+  },
+  "style_map": "results/tool_router_style_predictions.json",
+  "confusion_csv": "results/tool_router_confusion.csv",
+  "confusion_figure": "figures/tool_router_confusion.png",
+  "model_map": {
+    "travel_iceland": "classic_travel",
+    "movie_solar": "tech",
+    "coffee_roast": "retro_pop",
+    "museum_bauhaus": "bauhaus",
+    "concert_neon": "retro_pop",
+    "book_orbit": "editorial_serif",
+    "food_ramen": "retro_pop",
+    "tech_summit": "clean_corporate",
+    "fitness_launch": "sport",
+    "education_space": "retro_pop",
+    "skincare_lumina": "luxury_fashion",
+    "jazz_blue_note": "retro_pop",
+    "farmers_market": "organic_market",
+    "architecture_lecture": "brutalist_type",
+    "bike_commute": "premium_ad",
+    "tea_ceremony": "script_invite",
+    "album_static": "neon",
+    "climate_workshop": "clean_corporate",
+    "game_launch": "retro_pop",
+    "fashion_atelier": "luxury_fashion",
+    "photo_exhibit": "bauhaus",
+    "charity_run": "sport",
+    "boardgame_night": "retro_pop",
+    "cookbook_cover": "editorial_serif"
+  },
+  "records": [
+    {
+      "id": "travel_iceland",
+      "model_style": "classic_travel",
+      "rule_fallback_style": "classic_travel",
+      "final_style": "classic_travel",
+      "confidence": 1.0
+    },
+    {
+      "id": "movie_solar",
+      "model_style": "tech",
+      "rule_fallback_style": "cinematic",
+      "final_style": "tech",
+      "confidence": 0.9998123049736023
+    },
+    {
+      "id": "coffee_roast",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "premium_ad",
+      "final_style": "retro_pop",
+      "confidence": 0.9999995231628418
+    },
+    {
+      "id": "museum_bauhaus",
+      "model_style": "bauhaus",
+      "rule_fallback_style": "bauhaus",
+      "final_style": "bauhaus",
+      "confidence": 1.0
+    },
+    {
+      "id": "concert_neon",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "neon",
+      "final_style": "retro_pop",
+      "confidence": 1.0
+    },
+    {
+      "id": "book_orbit",
+      "model_style": "editorial_serif",
+      "rule_fallback_style": "editorial_serif",
+      "final_style": "editorial_serif",
+      "confidence": 0.9999997615814209
+    },
+    {
+      "id": "food_ramen",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "organic_market",
+      "final_style": "retro_pop",
+      "confidence": 0.9999921321868896
+    },
+    {
+      "id": "tech_summit",
+      "model_style": "clean_corporate",
+      "rule_fallback_style": "brutalist_type",
+      "final_style": "clean_corporate",
+      "confidence": 0.9999997615814209
+    },
+    {
+      "id": "fitness_launch",
+      "model_style": "sport",
+      "rule_fallback_style": "sport",
+      "final_style": "sport",
+      "confidence": 1.0
+    },
+    {
+      "id": "education_space",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "modern_minimal",
+      "final_style": "retro_pop",
+      "confidence": 1.0
+    },
+    {
+      "id": "skincare_lumina",
+      "model_style": "luxury_fashion",
+      "rule_fallback_style": "luxury_fashion",
+      "final_style": "luxury_fashion",
+      "confidence": 0.9999984502792358
+    },
+    {
+      "id": "jazz_blue_note",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "neon",
+      "final_style": "retro_pop",
+      "confidence": 0.5062445402145386
+    },
+    {
+      "id": "farmers_market",
+      "model_style": "organic_market",
+      "rule_fallback_style": "organic_market",
+      "final_style": "organic_market",
+      "confidence": 1.0
+    },
+    {
+      "id": "architecture_lecture",
+      "model_style": "brutalist_type",
+      "rule_fallback_style": "brutalist_type",
+      "final_style": "brutalist_type",
+      "confidence": 1.0
+    },
+    {
+      "id": "bike_commute",
+      "model_style": "premium_ad",
+      "rule_fallback_style": "classic_travel",
+      "final_style": "premium_ad",
+      "confidence": 0.9999790191650391
+    },
+    {
+      "id": "tea_ceremony",
+      "model_style": "script_invite",
+      "rule_fallback_style": "script_invite",
+      "final_style": "script_invite",
+      "confidence": 0.9997149109840393
+    },
+    {
+      "id": "album_static",
+      "model_style": "neon",
+      "rule_fallback_style": "handmade_marker",
+      "final_style": "neon",
+      "confidence": 0.518798828125
+    },
+    {
+      "id": "climate_workshop",
+      "model_style": "clean_corporate",
+      "rule_fallback_style": "clean_corporate",
+      "final_style": "clean_corporate",
+      "confidence": 1.0
+    },
+    {
+      "id": "game_launch",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "cinematic",
+      "final_style": "retro_pop",
+      "confidence": 0.9987674951553345
+    },
+    {
+      "id": "fashion_atelier",
+      "model_style": "luxury_fashion",
+      "rule_fallback_style": "luxury_fashion",
+      "final_style": "luxury_fashion",
+      "confidence": 1.0
+    },
+    {
+      "id": "photo_exhibit",
+      "model_style": "bauhaus",
+      "rule_fallback_style": "bauhaus",
+      "final_style": "bauhaus",
+      "confidence": 1.0
+    },
+    {
+      "id": "charity_run",
+      "model_style": "sport",
+      "rule_fallback_style": "sport",
+      "final_style": "sport",
+      "confidence": 1.0
+    },
+    {
+      "id": "boardgame_night",
+      "model_style": "retro_pop",
+      "rule_fallback_style": "retro_pop",
+      "final_style": "retro_pop",
+      "confidence": 1.0
+    },
+    {
+      "id": "cookbook_cover",
+      "model_style": "editorial_serif",
+      "rule_fallback_style": "script_invite",
+      "final_style": "editorial_serif",
+      "confidence": 0.9999996423721313
+    }
+  ]
+}

@@ -29,6 +29,18 @@ $PY render_posters.py
 $PY create_edits.py
 $PY evaluate.py
 $PY make_figures.py
+
+# Qwen-Image run, slower but stronger direct text/image baseline
+$PY generate_images.py --provider diffusers --mode backgrounds --model-id Qwen/Qwen-Image --steps 30 --true-cfg-scale 4.0
+$PY generate_images.py --provider diffusers --mode baselines --model-id Qwen/Qwen-Image --steps 30 --true-cfg-scale 4.0
+$PY render_posters.py
+$PY create_edits.py
+$PY evaluate.py
+$PY make_figures.py
+
+# Low-disk/32GB-GPU Qwen run used on the 5090 host
+$PY generate_images.py --provider diffusers --mode backgrounds --model-id Ilus-AI/Qwen-Image-2512-FP8 --steps 20 --true-cfg-scale 4.0
+$PY generate_images.py --provider diffusers --mode baselines --model-id Ilus-AI/Qwen-Image-2512-FP8 --steps 20 --true-cfg-scale 4.0
 ```
 
 ## Monitor Long Runs

@@ -9,10 +9,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--prompts", type=Path, default=Path("prompts/sample_prompts.json"))
     parser.add_argument("--figure-dir", type=Path, default=Path("figures"))
+    parser.add_argument("--background-dir", type=Path, default=Path("outputs/backgrounds"))
+    parser.add_argument("--baseline-dir", type=Path, default=Path("outputs/baselines"))
     parser.add_argument("--ours-dir", type=Path, default=Path("outputs/ours"))
     parser.add_argument("--edit-before-dir", type=Path, default=Path("outputs/edit_before"))
     parser.add_argument("--edit-after-dir", type=Path, default=Path("outputs/edit_after"))
-    parser.add_argument("--num", type=int, default=6)
+    parser.add_argument("--num", type=int, default=8)
     return parser.parse_args()
 
 
@@ -41,42 +43,58 @@ def thumb(path: Path, size=(260, 390)) -> Image.Image:
     return canvas
 
 
-def qualitative(items, out: Path, num: int, ours_dir: Path) -> None:
+def qualitative(items, out: Path, num: int, background_dir: Path, baseline_dir: Path, ours_dir: Path) -> None:
     items = items[:num]
-    cell_w, cell_h = 290, 440
-    canvas = Image.new("RGB", (cell_w * 3, cell_h * len(items) + 64), "white")
+    groups_per_row = 2
+    variants = [
+        ("Background", background_dir),
+        ("Direct T2I", baseline_dir),
+        ("Ours", ours_dir),
+    ]
+    cell_w, row_h = 240, 395
+    group_gap, header_h = 62, 44
+    rows = (len(items) + groups_per_row - 1) // groups_per_row
+    group_w = cell_w * len(variants)
+    canvas_w = group_w * groups_per_row + group_gap * (groups_per_row - 1)
+    canvas = Image.new("RGB", (canvas_w, header_h + row_h * rows), "white")
     draw = ImageDraw.Draw(canvas)
-    headers = ["Background", "Direct T2I Baseline", "Ours Layered"]
-    for i, header in enumerate(headers):
-        draw.text((i * cell_w + 18, 18), header, fill=(20, 20, 20), font=font(22))
-    for r, item in enumerate(items):
-        y = 58 + r * cell_h
-        paths = [
-            Path("outputs/backgrounds") / f"{item['id']}.png",
-            Path("outputs/baselines") / f"{item['id']}.png",
-            ours_dir / f"{item['id']}.png",
-        ]
-        for c, p in enumerate(paths):
-            canvas.paste(thumb(p), (c * cell_w + 15, y))
-        draw.text((8, y + 398), item["id"], fill=(60, 60, 60), font=font(16))
+    for g in range(groups_per_row):
+        base_x = g * (group_w + group_gap)
+        for c, (header, _) in enumerate(variants):
+            draw.text((base_x + c * cell_w + 14, 14), header, fill=(20, 20, 20), font=font(18))
+    for idx, item in enumerate(items):
+        row, group = divmod(idx, groups_per_row)
+        base_x = group * (group_w + group_gap)
+        y = header_h + row * row_h
+        for c, (_, folder) in enumerate(variants):
+            canvas.paste(thumb(folder / f"{item['id']}.png", (220, 330)), (base_x + c * cell_w + 10, y))
+        draw.text((base_x + 10, y + 338), item["id"], fill=(60, 60, 60), font=font(15))
     out.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(out)
 
 
 def edits(items, out: Path, num: int, before_dir: Path, after_dir: Path) -> None:
     items = items[: min(num, 4)]
-    cell_w, cell_h = 310, 450
-    canvas = Image.new("RGB", (cell_w * 2, cell_h * len(items) + 64), "white")
+    groups_per_row = 2
+    variants = [("Before", before_dir), ("After", after_dir)]
+    cell_w, row_h = 255, 405
+    group_gap, header_h = 64, 44
+    rows = (len(items) + groups_per_row - 1) // groups_per_row
+    group_w = cell_w * len(variants)
+    canvas_w = group_w * groups_per_row + group_gap * (groups_per_row - 1)
+    canvas = Image.new("RGB", (canvas_w, header_h + row_h * rows), "white")
     draw = ImageDraw.Draw(canvas)
-    draw.text((18, 18), "Before Edit", fill=(20, 20, 20), font=font(24))
-    draw.text((cell_w + 18, 18), "After Text Edit", fill=(20, 20, 20), font=font(24))
-    for r, item in enumerate(items):
-        y = 58 + r * cell_h
-        before = thumb(before_dir / f"{item['id']}.png", (280, 410))
-        after = thumb(after_dir / f"{item['id']}.png", (280, 410))
-        canvas.paste(before, (15, y))
-        canvas.paste(after, (cell_w + 15, y))
-        draw.text((8, y + 416), item["id"], fill=(60, 60, 60), font=font(16))
+    for g in range(groups_per_row):
+        base_x = g * (group_w + group_gap)
+        for c, (header, _) in enumerate(variants):
+            draw.text((base_x + c * cell_w + 14, 14), header, fill=(20, 20, 20), font=font(18))
+    for idx, item in enumerate(items):
+        row, group = divmod(idx, groups_per_row)
+        base_x = group * (group_w + group_gap)
+        y = header_h + row * row_h
+        for c, (_, folder) in enumerate(variants):
+            canvas.paste(thumb(folder / f"{item['id']}.png", (235, 352)), (base_x + c * cell_w + 10, y))
+        draw.text((base_x + 10, y + 360), item["id"], fill=(60, 60, 60), font=font(15))
     out.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(out)
 
@@ -104,7 +122,7 @@ def pipeline(out: Path) -> None:
 def main() -> None:
     args = parse_args()
     items = json.loads(args.prompts.read_text(encoding="utf-8"))
-    qualitative(items, args.figure_dir / "qualitative_grid.png", args.num, args.ours_dir)
+    qualitative(items, args.figure_dir / "qualitative_grid.png", args.num, args.background_dir, args.baseline_dir, args.ours_dir)
     edits(items, args.figure_dir / "edit_examples.png", args.num, args.edit_before_dir, args.edit_after_dir)
     pipeline(args.figure_dir / "pipeline.png")
     print(f"[saved] figures in {args.figure_dir}")

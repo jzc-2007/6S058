@@ -1,0 +1,11 @@
+{
+  "rendered_text_exact_ours": 1.0,
+  "ocr_exact_ours": 0.0,
+  "ocr_exact_baseline": null,
+  "ocr_word_recall_ours": 0.0,
+  "ocr_word_recall_baseline": 0.0,
+  "layout_validity": 1.0,
+  "contrast_proxy": 0.5137495949036545,
+  "edit_bg_ssim": 0.9971530645404173,
+  "edit_bg_lpips": 0.006196678860987959
+}

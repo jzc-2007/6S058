@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_1515/ours_qwen_seed_1515_tool/fitness_launch.png",
+  "blocks": [
+    {
+      "text": "PULSE RUNNER",
+      "role": "title",
+      "bbox": [
+        107,
+        80,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BUILT FOR SPEED",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        668,
+        552,
+        115
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "LAUNCH WEEK",
+      "role": "meta",
+      "bbox": [
+        138,
+        529,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "sport",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1,
+    "text_effect": "block_shadow",
+    "accent_color": [
+      255,
+      64,
+      42
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "PULSE RUNNER",
+      "rendered_text": "PULSE RUNNER",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Anton-Regular.ttf",
+      "font_size": 98,
+      "tracking_px": 2,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        124,
+        129,
+        673,
+        226
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "BUILT FOR SPEED",
+      "rendered_text": "BUILT FOR SPEED",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 73,
+      "tracking_px": 1,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        111,
+        693,
+        592,
+        758
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "LAUNCH WEEK",
+      "rendered_text": "LAUNCH WEEK",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 46,
+      "tracking_px": 0,
+      "text_effect": "block_shadow",
+      "text_rect": [
+        198,
+        544,
+        446,
+        587
+      ],
+      "align": "center"
+    }
+  ]
+}

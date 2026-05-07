@@ -1,0 +1,154 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/qwen_seed_886/edit_before_qwen_seed_886_tool/movie_solar.png",
+  "blocks": [
+    {
+      "text": "SOLAR WAKE",
+      "role": "title",
+      "bbox": [
+        107,
+        253,
+        489,
+        195
+      ],
+      "color": [
+        165,
+        238,
+        255
+      ],
+      "stroke_color": [
+        0,
+        17,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "A FILM BY NORA CHEN",
+      "role": "subtitle",
+      "bbox": [
+        107,
+        529,
+        386,
+        94
+      ],
+      "color": [
+        240,
+        252,
+        255
+      ],
+      "stroke_color": [
+        0,
+        17,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "2091",
+      "role": "meta",
+      "bbox": [
+        26,
+        806,
+        264,
+        73
+      ],
+      "color": [
+        240,
+        252,
+        255
+      ],
+      "stroke_color": [
+        0,
+        17,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "tech",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "left_column",
+    "tracking": 1,
+    "text_effect": "glow_gradient",
+    "accent_color": [
+      43,
+      206,
+      255
+    ]
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "SOLAR WAKE",
+      "rendered_text": "SOLAR\nWAKE",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Righteous-Regular.ttf",
+      "font_size": 114,
+      "tracking_px": 2,
+      "text_effect": "glow_gradient",
+      "text_rect": [
+        157,
+        255,
+        545,
+        445
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "A FILM BY NORA CHEN",
+      "rendered_text": "A FILM BY NORA\nCHEN",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 46,
+      "tracking_px": 0,
+      "text_effect": "glow_gradient",
+      "text_rect": [
+        161,
+        530,
+        439,
+        621
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "2091",
+      "rendered_text": "2091",
+      "font_path": "/root/autodl-tmp/6s058_final_project/assets/fonts/Oswald-VariableFont_wght.ttf",
+      "font_size": 43,
+      "tracking_px": 0,
+      "text_effect": "glow_gradient",
+      "text_rect": [
+        115,
+        822,
+        200,
+        863
+      ],
+      "align": "center"
+    }
+  ]
+}
