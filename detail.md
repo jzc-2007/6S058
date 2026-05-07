@@ -20,9 +20,10 @@ This note records what was synced from the remote 5090 run, which outputs are us
   - Each prompt group has three images: no-text Qwen background, direct Qwen T2I baseline, and our layered result.
   - Use this to compare the baseline against our editable typography pipeline.
 
-- `figures/style_grid_qwen_seed_886_tool.png`
+- `figures/style_grid_mixed_no_overlap.png`
   - Paper Figure 3.
   - 24 final posters in an 8-column by 3-row grid.
+  - The first 8 examples are from new held-out demo prompts, and the remaining 16 are from the original 24-prompt run. This avoids prompt overlap with Figure 2.
   - Use this as the main gallery for style diversity.
 
 - `figures/edit_examples.png`

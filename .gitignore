@@ -24,3 +24,4 @@ figures/local_art_test/
 figures/local_new/
 prompts/local_new_examples.json
 results/local_new_*
+extra_demos/

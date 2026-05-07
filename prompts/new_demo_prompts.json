@@ -1,0 +1,102 @@
+[
+  {
+    "id": "perfume_noir_bloom",
+    "category": "beauty",
+    "background_prompt": "luxury perfume campaign poster background, black glass bottle on wet stone, white jasmine petals, dramatic rim light, refined editorial product photography, no words, no letters, no logo",
+    "baseline_prompt": "a luxury perfume campaign poster with the exact text NOIR BLOOM, MIDNIGHT JASMINE, LIMITED EDITION",
+    "texts": ["NOIR BLOOM", "MIDNIGHT JASMINE", "LIMITED EDITION"],
+    "edit_texts": ["NOIR BLOOM", "VELVET JASMINE", "PREVIEW TONIGHT"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "streetwear_drop",
+    "category": "ad",
+    "background_prompt": "streetwear launch poster background, oversized jacket on chrome mannequin, concrete studio, flash photography, bold fashion energy, no words, no letters, no logo",
+    "baseline_prompt": "a streetwear launch poster with the exact text SIGNAL DROP, CAPSULE 04, FRIDAY 10 AM",
+    "texts": ["SIGNAL DROP", "CAPSULE 04", "FRIDAY 10 AM"],
+    "edit_texts": ["SIGNAL DROP", "WINTER CAPSULE", "ONLINE ONLY"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "robotics_expo",
+    "category": "event",
+    "background_prompt": "robotics expo poster background, friendly humanoid robot hand assembling a circuit board, bright convention hall, clean futuristic lighting, no words, no letters",
+    "baseline_prompt": "a robotics expo poster with the exact text ROBOTICS EXPO, BUILD THE FUTURE, MARCH 21",
+    "texts": ["ROBOTICS EXPO", "BUILD THE FUTURE", "MARCH 21"],
+    "edit_texts": ["ROBOTICS EXPO", "HANDS ON LABS", "MARCH 22"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "trail_marathon",
+    "category": "fitness",
+    "background_prompt": "trail marathon poster background, runners climbing a mountain ridge at sunrise, dust and golden light, high-energy outdoor sports photography, no words, no letters",
+    "baseline_prompt": "a trail marathon poster with the exact text RIDGE RUN, 25K TRAIL RACE, SIGN UP NOW",
+    "texts": ["RIDGE RUN", "25K TRAIL RACE", "SIGN UP NOW"],
+    "edit_texts": ["RIDGE RUN", "50K ULTRA ADDED", "EARLY BIRD OPEN"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "natural_wine",
+    "category": "food",
+    "background_prompt": "natural wine tasting poster background, amber wine glasses on rustic table, grapes and candlelight, warm editorial still life, no words, no letters, no label",
+    "baseline_prompt": "a natural wine tasting poster with the exact text WILD VINES, TASTING NIGHT, APRIL 6",
+    "texts": ["WILD VINES", "TASTING NIGHT", "APRIL 6"],
+    "edit_texts": ["WILD VINES", "NEW MAKERS POUR", "APRIL 13"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "indie_game_forest",
+    "category": "movie",
+    "background_prompt": "indie video game poster background, tiny knight at the edge of a luminous enchanted forest, painterly fantasy atmosphere, cinematic depth, no words, no letters",
+    "baseline_prompt": "an indie video game poster with the exact text MOSS KINGDOM, BEGIN YOUR QUEST, DEMO OUT NOW",
+    "texts": ["MOSS KINGDOM", "BEGIN YOUR QUEST", "DEMO OUT NOW"],
+    "edit_texts": ["MOSS KINGDOM", "STEAM NEXT FEST", "PLAY THE DEMO"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "modern_dance",
+    "category": "concert",
+    "background_prompt": "modern dance performance poster background, dancer frozen midair in a black box theater, sharp spotlight, expressive motion blur, no words, no letters",
+    "baseline_prompt": "a modern dance performance poster with the exact text BODY ELECTRIC, ONE NIGHT, STUDIO 7",
+    "texts": ["BODY ELECTRIC", "ONE NIGHT", "STUDIO 7"],
+    "edit_texts": ["BODY ELECTRIC", "LATE SHOW ADDED", "STUDIO 7"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "design_book_cover",
+    "category": "book",
+    "background_prompt": "minimal design book cover background, folded paper sculpture casting precise shadows on warm gray surface, quiet editorial composition, no words, no letters",
+    "baseline_prompt": "a minimal design book cover with the exact text FORMS OF LIGHT, ELI PARK, DESIGN ESSAYS",
+    "texts": ["FORMS OF LIGHT", "ELI PARK", "DESIGN ESSAYS"],
+    "edit_texts": ["FORMS OF LIGHT", "ELI PARK", "SECOND EDITION"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "desert_architecture",
+    "category": "travel",
+    "background_prompt": "travel poster background, modern adobe architecture in the desert, long shadows, turquoise pool, warm cinematic sunset, no words, no letters, no signage",
+    "baseline_prompt": "a travel poster with the exact text DESERT MODERN, PALM SPRINGS, WEEKEND ESCAPE",
+    "texts": ["DESERT MODERN", "PALM SPRINGS", "WEEKEND ESCAPE"],
+    "edit_texts": ["DESERT MODERN", "SUNSET ARCHITECTURE", "SPRING 2027"],
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "ceramic_exhibit",
+    "category": "museum",
+    "background_prompt": "museum ceramics exhibition poster background, porcelain vessels on plinths, soft gallery light, sculptural shadows, elegant minimal composition, no words, no letters",
+    "baseline_prompt": "a museum exhibition poster with the exact text FIRED EARTH, CERAMICS TODAY, MAY 9",
+    "texts": ["FIRED EARTH", "CERAMICS TODAY", "MAY 9"],
+    "edit_texts": ["FIRED EARTH", "CLAY AND FORM", "MAY 16"],
+    "width": 768,
+    "height": 1152
+  }
+]
