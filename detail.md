@@ -23,7 +23,7 @@ This note records what was synced from the remote 5090 run, which outputs are us
 - `figures/style_grid_mixed_no_overlap.png`
   - Paper Figure 3.
   - 24 final posters in an 8-column by 3-row grid.
-  - The first 8 examples are from new held-out demo prompts, and the remaining 16 are from the original 24-prompt run. This avoids prompt overlap with Figure 2.
+  - The first 10 examples are from new held-out demo prompts, and the remaining 14 are from the original 24-prompt run. This avoids prompt overlap with Figure 2 and avoids weak no-text backgrounds from the original run.
   - Use this as the main gallery for style diversity.
 
 - `figures/edit_examples.png`
