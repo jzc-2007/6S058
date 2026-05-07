@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/fashion_atelier.png",
+  "blocks": [
+    {
+      "text": "ATELIER LINE",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FALL COLLECTION",
+      "role": "subtitle",
+      "bbox": [
+        124,
+        967,
+        354,
+        69
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "PRIVATE PREVIEW",
+      "role": "meta",
+      "bbox": [
+        536,
+        971,
+        199,
+        51
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ATELIER LINE",
+      "rendered_text": "ATELIER\nLINE",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-AllSC.ttf",
+      "font_size": 161,
+      "tracking_px": 10,
+      "text_rect": [
+        95,
+        105,
+        672,
+        284
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "FALL COLLECTION",
+      "rendered_text": "FALL COLLECTION",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+      "font_size": 34,
+      "tracking_px": 2,
+      "text_rect": [
+        134,
+        988,
+        467,
+        1014
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "PRIVATE PREVIEW",
+      "rendered_text": "PRIVATE\nPREVIEW",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+      "font_size": 25,
+      "tracking_px": 1,
+      "text_rect": [
+        576,
+        975,
+        694,
+        1017
+      ],
+      "align": "center"
+    }
+  ]
+}

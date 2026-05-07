@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_genposter/coffee_roast.png",
+  "blocks": [
+    {
+      "text": "NIGHT OWL ROAST",
+      "role": "title",
+      "bbox": [
+        219,
+        199,
+        336,
+        117
+      ],
+      "color": [
+        255,
+        231,
+        168
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "SINGLE ORIGIN BLEND",
+      "role": "subtitle",
+      "bbox": [
+        383,
+        115,
+        168,
+        51
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "ORDER BY MAY 10",
+      "role": "meta",
+      "bbox": [
+        76,
+        806,
+        614,
+        62
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "premium_ad",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial"
+  }
+}

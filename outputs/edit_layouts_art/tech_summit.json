@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/tech_summit.png",
+  "blocks": [
+    {
+      "text": "VISION SUMMIT",
+      "role": "title",
+      "bbox": [
+        163,
+        101,
+        451,
+        115
+      ],
+      "color": [
+        245,
+        245,
+        235
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COMPUTER VISION FOR DESIGN",
+      "role": "subtitle",
+      "bbox": [
+        126,
+        253,
+        310,
+        73
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "OCTOBER 9",
+      "role": "meta",
+      "bbox": [
+        408,
+        1026,
+        184,
+        51
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "brutalist_type",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column",
+    "tracking": 2
+  }
+}

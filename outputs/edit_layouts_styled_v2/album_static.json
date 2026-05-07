@@ -1,0 +1,92 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_styled_v2/album_static.png",
+  "blocks": [
+    {
+      "text": "STATIC GARDEN",
+      "role": "title",
+      "bbox": [
+        54,
+        69,
+        660,
+        195
+      ],
+      "color": [
+        96,
+        255,
+        245
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ECHO VALE",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        956,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "DELUXE EDITION",
+      "role": "meta",
+      "bbox": [
+        115,
+        852,
+        537,
+        80
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "neon"
+}

@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/bike_commute.png",
+  "blocks": [
+    {
+      "text": "VELO CITY",
+      "role": "title",
+      "bbox": [
+        114,
+        154,
+        483,
+        168
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "RIDE LIGHTER",
+      "role": "subtitle",
+      "bbox": [
+        89,
+        385,
+        327,
+        69
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SPRING SALE",
+      "role": "meta",
+      "bbox": [
+        230,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "VELO CITY",
+      "rendered_text": "VELO CITY",
+      "font_path": "/usr/share/fonts/opentype/bebas-neue/BebasNeue-Bold.otf",
+      "font_size": 137,
+      "tracking_px": 2,
+      "text_rect": [
+        139,
+        185,
+        571,
+        291
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "RIDE LIGHTER",
+      "rendered_text": "RIDE LIGHTER",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-SemiBold.otf",
+      "font_size": 42,
+      "tracking_px": 0,
+      "text_rect": [
+        117,
+        402,
+        387,
+        437
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SPRING SALE",
+      "rendered_text": "SPRING SALE",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-SemiBold.otf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_rect": [
+        278,
+        916,
+        549,
+        953
+      ],
+      "align": "center"
+    }
+  ]
+}

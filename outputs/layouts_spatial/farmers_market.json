@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/farmers_market.png",
+  "blocks": [
+    {
+      "text": "RIVER MARKET",
+      "role": "title",
+      "bbox": [
+        92,
+        875,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        248,
+        210
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LOCAL FARMS",
+      "role": "subtitle",
+      "bbox": [
+        146,
+        92,
+        537,
+        94
+      ],
+      "color": [
+        242,
+        255,
+        225
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SATURDAY MORNING",
+      "role": "meta",
+      "bbox": [
+        302,
+        627,
+        202,
+        55
+      ],
+      "color": [
+        242,
+        255,
+        225
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "organic_market",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "RIVER MARKET",
+      "rendered_text": "RIVER\nMARKET",
+      "font_path": "/usr/share/fonts/opentype/lobstertwo/LobsterTwo-Bold.otf",
+      "font_size": 100,
+      "tracking_px": 0,
+      "text_rect": [
+        189,
+        879,
+        577,
+        1066
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LOCAL FARMS",
+      "rendered_text": "LOCAL FARMS",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-SemiBold.otf",
+      "font_size": 54,
+      "tracking_px": 0,
+      "text_rect": [
+        242,
+        118,
+        586,
+        160
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SATURDAY MORNING",
+      "rendered_text": "SATURDAY\nMORNING",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-SemiBold.otf",
+      "font_size": 31,
+      "tracking_px": 0,
+      "text_rect": [
+        325,
+        628,
+        480,
+        680
+      ],
+      "align": "center"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ablations/no_saliency/coffee_roast.png",
+  "blocks": [
+    {
+      "text": "NIGHT OWL ROAST",
+      "role": "title",
+      "bbox": [
+        54,
+        69,
+        660,
+        195
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "SMALL BATCH COFFEE",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        806,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "20% OFF TODAY",
+      "role": "meta",
+      "bbox": [
+        115,
+        967,
+        537,
+        80
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ]
+}

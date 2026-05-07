@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/travel_iceland.png",
+  "blocks": [
+    {
+      "text": "ICELAND",
+      "role": "title",
+      "bbox": [
+        92,
+        875,
+        583,
+        195
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LAND OF FIRE AND ICE",
+      "role": "subtitle",
+      "bbox": [
+        122,
+        92,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SUMMER 2026",
+      "role": "meta",
+      "bbox": [
+        439,
+        611,
+        199,
+        51
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ICELAND",
+      "rendered_text": "ICELAND",
+      "font_path": "/usr/share/fonts/opentype/bebas-neue/BebasNeue-Bold.otf",
+      "font_size": 159,
+      "tracking_px": 3,
+      "text_rect": [
+        169,
+        911,
+        597,
+        1033
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LAND OF FIRE AND ICE",
+      "rendered_text": "LAND OF FIRE AND\nICE",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-SemiBold.otf",
+      "font_size": 54,
+      "tracking_px": 1,
+      "text_rect": [
+        151,
+        92,
+        630,
+        186
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SUMMER 2026",
+      "rendered_text": "SUMMER\n2026",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-SemiBold.otf",
+      "font_size": 29,
+      "tracking_px": 0,
+      "text_rect": [
+        476,
+        610,
+        600,
+        662
+      ],
+      "align": "center"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/album_static.png",
+  "blocks": [
+    {
+      "text": "STATIC GARDEN",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        255,
+        250,
+        214
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ECHO VALE",
+      "role": "subtitle",
+      "bbox": [
+        176,
+        944,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        231,
+        92
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "DELUXE EDITION",
+      "role": "meta",
+      "bbox": [
+        199,
+        760,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        231,
+        92
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "handmade_marker",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "STATIC GARDEN",
+      "rendered_text": "STATIC\nGARDEN",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 130,
+      "tracking_px": 0,
+      "text_rect": [
+        98,
+        84,
+        668,
+        306
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "ECHO VALE",
+      "rendered_text": "ECHO VALE",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 54,
+      "tracking_px": 0,
+      "text_rect": [
+        285,
+        968,
+        604,
+        1013
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "DELUXE EDITION",
+      "rendered_text": "DELUXE\nEDITION",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 42,
+      "tracking_px": 0,
+      "text_rect": [
+        295,
+        760,
+        470,
+        833
+      ],
+      "align": "center"
+    }
+  ]
+}

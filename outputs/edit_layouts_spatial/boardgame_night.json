@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/boardgame_night.png",
+  "blocks": [
+    {
+      "text": "TABLETOP NIGHT",
+      "role": "title",
+      "bbox": [
+        110,
+        170,
+        543,
+        169
+      ],
+      "color": [
+        255,
+        240,
+        67
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BEGINNERS WELCOME",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        668,
+        552,
+        115
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "THURSDAY 6 PM",
+      "role": "meta",
+      "bbox": [
+        199,
+        944,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        19,
+        26,
+        46
+      ],
+      "shadow_color": [
+        255,
+        72,
+        91
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "retro_pop",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "TABLETOP NIGHT",
+      "rendered_text": "TABLETOP\nNIGHT",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 94,
+      "tracking_px": 1,
+      "text_rect": [
+        120,
+        169,
+        643,
+        340
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "BEGINNERS WELCOME",
+      "rendered_text": "BEGINNERS\nWELCOME",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 63,
+      "tracking_px": 1,
+      "text_rect": [
+        157,
+        671,
+        546,
+        780
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "THURSDAY 6 PM",
+      "rendered_text": "THURSDAY 6\nPM",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 43,
+      "tracking_px": 0,
+      "text_rect": [
+        243,
+        943,
+        522,
+        1018
+      ],
+      "align": "center"
+    }
+  ]
+}

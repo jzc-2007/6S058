@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/museum_bauhaus.png",
+  "blocks": [
+    {
+      "text": "BAUHAUS NOW",
+      "role": "title",
+      "bbox": [
+        151,
+        114,
+        450,
+        115
+      ],
+      "color": [
+        245,
+        45,
+        45
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COLOR AND CONSTRUCTION",
+      "role": "subtitle",
+      "bbox": [
+        214,
+        387,
+        338,
+        91
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "MAY 3 - AUGUST 18",
+      "role": "meta",
+      "bbox": [
+        484,
+        916,
+        184,
+        51
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "bauhaus",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "top_left",
+    "tracking": 1
+  }
+}

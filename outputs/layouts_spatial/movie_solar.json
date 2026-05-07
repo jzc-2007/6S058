@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/movie_solar.png",
+  "blocks": [
+    {
+      "text": "SOLAR WAKE",
+      "role": "title",
+      "bbox": [
+        92,
+        299,
+        583,
+        195
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "A FILM BY NORA CHEN",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        737,
+        291,
+        120
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "2091",
+      "role": "meta",
+      "bbox": [
+        138,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "cinematic",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "SOLAR WAKE",
+      "rendered_text": "SOLAR WAKE",
+      "font_path": "/usr/share/fonts/opentype/bebas-neue/BebasNeue-Bold.otf",
+      "font_size": 138,
+      "tracking_px": 2,
+      "text_rect": [
+        106,
+        343,
+        660,
+        450
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "A FILM BY NORA CHEN",
+      "rendered_text": "A FILM BY\nNORA CHEN",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 53,
+      "tracking_px": 1,
+      "text_rect": [
+        86,
+        751,
+        356,
+        843
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "2091",
+      "rendered_text": "2091",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 48,
+      "tracking_px": 1,
+      "text_rect": [
+        270,
+        915,
+        373,
+        953
+      ],
+      "align": "center"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_art/fitness_launch.png",
+  "blocks": [
+    {
+      "text": "PULSE RUNNER",
+      "role": "title",
+      "bbox": [
+        158,
+        285,
+        445,
+        115
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BUILT FOR SPEED",
+      "role": "subtitle",
+      "bbox": [
+        161,
+        944,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "LAUNCH WEEK",
+      "role": "meta",
+      "bbox": [
+        275,
+        1055,
+        447,
+        52
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "sport",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1
+  }
+}

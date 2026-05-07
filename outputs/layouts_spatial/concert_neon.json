@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/concert_neon.png",
+  "blocks": [
+    {
+      "text": "ELECTRIC MIDNIGHT",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        96,
+        255,
+        245
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LIVE AT THE VAULT",
+      "role": "subtitle",
+      "bbox": [
+        115,
+        483,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SATURDAY 9 PM",
+      "role": "meta",
+      "bbox": [
+        200,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "neon",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ELECTRIC MIDNIGHT",
+      "rendered_text": "ELECTRIC\nMIDNIGHT",
+      "font_path": "/usr/share/fonts/truetype/comfortaa/Comfortaa-Bold.ttf",
+      "font_size": 114,
+      "tracking_px": 2,
+      "text_rect": [
+        59,
+        91,
+        708,
+        299
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LIVE AT THE VAULT",
+      "rendered_text": "LIVE AT THE VAULT",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 58,
+      "tracking_px": 1,
+      "text_rect": [
+        138,
+        507,
+        628,
+        553
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SATURDAY 9 PM",
+      "rendered_text": "SATURDAY 9 PM",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_rect": [
+        232,
+        916,
+        536,
+        952
+      ],
+      "align": "center"
+    }
+  ]
+}

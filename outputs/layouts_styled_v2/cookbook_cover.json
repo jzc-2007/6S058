@@ -1,0 +1,92 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_styled_v2/cookbook_cover.png",
+  "blocks": [
+    {
+      "text": "SIMPLE SUPPERS",
+      "role": "title",
+      "bbox": [
+        54,
+        207,
+        660,
+        195
+      ],
+      "color": [
+        245,
+        242,
+        232
+      ],
+      "stroke_color": [
+        40,
+        40,
+        40
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LENA PARK",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        806,
+        599,
+        97
+      ],
+      "color": [
+        235,
+        232,
+        224
+      ],
+      "stroke_color": [
+        40,
+        40,
+        40
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "EVERYDAY RECIPES",
+      "role": "meta",
+      "bbox": [
+        115,
+        967,
+        537,
+        80
+      ],
+      "color": [
+        235,
+        232,
+        224
+      ],
+      "stroke_color": [
+        40,
+        40,
+        40
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "literary"
+}

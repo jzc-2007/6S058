@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/photo_exhibit.png",
+  "blocks": [
+    {
+      "text": "SILVER LIGHT",
+      "role": "title",
+      "bbox": [
+        122,
+        184,
+        489,
+        195
+      ],
+      "color": [
+        245,
+        45,
+        45
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "NEW PHOTOGRAPHY",
+      "role": "subtitle",
+      "bbox": [
+        72,
+        614,
+        306,
+        129
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SEPTEMBER 12",
+      "role": "meta",
+      "bbox": [
+        70,
+        945,
+        214,
+        51
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "bauhaus",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "top_left",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "SILVER LIGHT",
+      "rendered_text": "SILVER\nLIGHT",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 112,
+      "tracking_px": 2,
+      "text_rect": [
+        156,
+        186,
+        577,
+        376
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "NEW PHOTOGRAPHY",
+      "rendered_text": "NEW\nPHOTOGRAPHY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 36,
+      "tracking_px": 0,
+      "text_rect": [
+        81,
+        646,
+        368,
+        710
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SEPTEMBER 12",
+      "rendered_text": "SEPTEMBER\n12",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 29,
+      "tracking_px": 0,
+      "text_rect": [
+        85,
+        943,
+        268,
+        997
+      ],
+      "align": "center"
+    }
+  ]
+}

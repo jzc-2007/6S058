@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_genposter/skincare_lumina.png",
+  "blocks": [
+    {
+      "text": "LUMINA SERUM",
+      "role": "title",
+      "bbox": [
+        219,
+        199,
+        336,
+        117
+      ],
+      "color": [
+        255,
+        231,
+        168
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "GLOW STARTS HERE",
+      "role": "subtitle",
+      "bbox": [
+        291,
+        618,
+        184,
+        187
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NEW FORMULA",
+      "role": "meta",
+      "bbox": [
+        61,
+        967,
+        386,
+        80
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "premium_ad",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial"
+  }
+}

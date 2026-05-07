@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/education_space.png",
+  "blocks": [
+    {
+      "text": "STARS FOR ALL",
+      "role": "title",
+      "bbox": [
+        122,
+        184,
+        554,
+        195
+      ],
+      "color": [
+        250,
+        250,
+        246
+      ],
+      "stroke_color": [
+        18,
+        18,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "OBSERVATORY OPEN HOUSE",
+      "role": "subtitle",
+      "bbox": [
+        69,
+        990,
+        431,
+        97
+      ],
+      "color": [
+        236,
+        236,
+        228
+      ],
+      "stroke_color": [
+        18,
+        18,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "JUNE 2",
+      "role": "meta",
+      "bbox": [
+        122,
+        852,
+        386,
+        80
+      ],
+      "color": [
+        236,
+        236,
+        228
+      ],
+      "stroke_color": [
+        18,
+        18,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "modern_minimal",
+  "style_details": {
+    "backing": "none",
+    "align": "left",
+    "layout_template": "top_left",
+    "tracking": 1
+  }
+}

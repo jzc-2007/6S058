@@ -1,0 +1,92 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_styled_v2/architecture_lecture.png",
+  "blocks": [
+    {
+      "text": "CITIES IN CONCRETE",
+      "role": "title",
+      "bbox": [
+        54,
+        771,
+        660,
+        195
+      ],
+      "color": [
+        165,
+        238,
+        255
+      ],
+      "stroke_color": [
+        0,
+        17,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "PUBLIC LECTURE",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        253,
+        599,
+        97
+      ],
+      "color": [
+        240,
+        252,
+        255
+      ],
+      "stroke_color": [
+        0,
+        17,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NOVEMBER 14",
+      "role": "meta",
+      "bbox": [
+        115,
+        967,
+        537,
+        80
+      ],
+      "color": [
+        240,
+        252,
+        255
+      ],
+      "stroke_color": [
+        0,
+        17,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "tech"
+}

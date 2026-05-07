@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/tea_ceremony.png",
+  "blocks": [
+    {
+      "text": "MOUNTAIN TEA",
+      "role": "title",
+      "bbox": [
+        123,
+        161,
+        489,
+        195
+      ],
+      "color": [
+        255,
+        244,
+        231
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FIRST FLUSH",
+      "role": "subtitle",
+      "bbox": [
+        423,
+        682,
+        291,
+        104
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "LIMITED HARVEST",
+      "role": "meta",
+      "bbox": [
+        410,
+        535,
+        199,
+        51
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "script_invite",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "MOUNTAIN TEA",
+      "rendered_text": "MOUNTAIN\nTEA",
+      "font_path": "/usr/share/fonts/opentype/lobster/lobster.otf",
+      "font_size": 86,
+      "tracking_px": 0,
+      "text_rect": [
+        136,
+        176,
+        598,
+        340
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "FIRST FLUSH",
+      "rendered_text": "FIRST\nFLUSH",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+      "font_size": 49,
+      "tracking_px": 0,
+      "text_rect": [
+        491,
+        696,
+        645,
+        772
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "LIMITED HARVEST",
+      "rendered_text": "LIMITED\nHARVEST",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+      "font_size": 24,
+      "tracking_px": 0,
+      "text_rect": [
+        454,
+        539,
+        564,
+        581
+      ],
+      "align": "center"
+    }
+  ]
+}

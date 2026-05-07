@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/bike_commute.png",
+  "blocks": [
+    {
+      "text": "VELO CITY",
+      "role": "title",
+      "bbox": [
+        87,
+        99,
+        368,
+        217
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BUILT FOR COMMUTERS",
+      "role": "subtitle",
+      "bbox": [
+        668,
+        594,
+        100,
+        69
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "TEST RIDE TODAY",
+      "role": "meta",
+      "bbox": [
+        122,
+        898,
+        537,
+        80
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/game_launch.png",
+  "blocks": [
+    {
+      "text": "GATE OF ASH",
+      "role": "title",
+      "bbox": [
+        205,
+        144,
+        368,
+        550
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "SEASON ONE",
+      "role": "subtitle",
+      "bbox": [
+        187,
+        836,
+        412,
+        96
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "PLAY TODAY",
+      "role": "meta",
+      "bbox": [
+        615,
+        898,
+        153,
+        51
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "cinematic",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  }
+}

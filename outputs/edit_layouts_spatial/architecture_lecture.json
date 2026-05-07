@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/architecture_lecture.png",
+  "blocks": [
+    {
+      "text": "CITIES IN CONCRETE",
+      "role": "title",
+      "bbox": [
+        124,
+        189,
+        525,
+        149
+      ],
+      "color": [
+        245,
+        245,
+        235
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "DESIGN FORUM",
+      "role": "subtitle",
+      "bbox": [
+        406,
+        718,
+        291,
+        134
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NOVEMBER 21",
+      "role": "meta",
+      "bbox": [
+        26,
+        806,
+        264,
+        73
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "brutalist_type",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column",
+    "tracking": 2
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "CITIES IN CONCRETE",
+      "rendered_text": "CITIES IN\nCONCRETE",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 85,
+      "tracking_px": 3,
+      "text_rect": [
+        153,
+        191,
+        654,
+        335
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "DESIGN FORUM",
+      "rendered_text": "DESIGN\nFORUM",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 70,
+      "tracking_px": 2,
+      "text_rect": [
+        422,
+        727,
+        703,
+        843
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "NOVEMBER 21",
+      "rendered_text": "NOVEMBER\n21",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 41,
+      "tracking_px": 1,
+      "text_rect": [
+        40,
+        808,
+        287,
+        877
+      ],
+      "align": "left"
+    }
+  ]
+}

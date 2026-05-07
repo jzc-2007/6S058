@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/album_static.png",
+  "blocks": [
+    {
+      "text": "STATIC GARDEN",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        255,
+        250,
+        214
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ECHO VALE",
+      "role": "subtitle",
+      "bbox": [
+        176,
+        944,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        231,
+        92
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "OUT NOW",
+      "role": "meta",
+      "bbox": [
+        199,
+        760,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        231,
+        92
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "handmade_marker",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "STATIC GARDEN",
+      "rendered_text": "STATIC\nGARDEN",
+      "font_path": "/usr/share/fonts/truetype/yusei-magic/YuseiMagic-Regular.ttf",
+      "font_size": 124,
+      "tracking_px": 0,
+      "text_rect": [
+        164,
+        83,
+        603,
+        306
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "ECHO VALE",
+      "rendered_text": "ECHO VALE",
+      "font_path": "/usr/share/fonts/truetype/cabinsketch/CabinSketch-Regular.ttf",
+      "font_size": 54,
+      "tracking_px": 0,
+      "text_rect": [
+        311,
+        970,
+        578,
+        1012
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "OUT NOW",
+      "rendered_text": "OUT NOW",
+      "font_path": "/usr/share/fonts/truetype/cabinsketch/CabinSketch-Regular.ttf",
+      "font_size": 42,
+      "tracking_px": 0,
+      "text_rect": [
+        288,
+        779,
+        478,
+        813
+      ],
+      "align": "center"
+    }
+  ]
+}

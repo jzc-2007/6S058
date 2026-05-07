@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/charity_run.png",
+  "blocks": [
+    {
+      "text": "RUN FOR HOPE",
+      "role": "title",
+      "bbox": [
+        153,
+        414,
+        460,
+        253
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "5K COMMUNITY RACE",
+      "role": "subtitle",
+      "bbox": [
+        176,
+        944,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "REGISTER TODAY",
+      "role": "meta",
+      "bbox": [
+        199,
+        760,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "sport",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "RUN FOR HOPE",
+      "rendered_text": "RUN FOR\nHOPE",
+      "font_path": "/usr/share/fonts/opentype/bebas-neue/BebasNeue-Bold.otf",
+      "font_size": 150,
+      "tracking_px": 3,
+      "text_rect": [
+        180,
+        414,
+        586,
+        666
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "5K COMMUNITY RACE",
+      "rendered_text": "5K COMMUNITY RACE",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 54,
+      "tracking_px": 1,
+      "text_rect": [
+        192,
+        969,
+        696,
+        1013
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "REGISTER TODAY",
+      "rendered_text": "REGISTER TODAY",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 46,
+      "tracking_px": 0,
+      "text_rect": [
+        220,
+        778,
+        545,
+        815
+      ],
+      "align": "center"
+    }
+  ]
+}

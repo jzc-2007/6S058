@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/coffee_roast.png",
+  "blocks": [
+    {
+      "text": "NIGHT OWL ROAST",
+      "role": "title",
+      "bbox": [
+        130,
+        171,
+        414,
+        157
+      ],
+      "color": [
+        255,
+        231,
+        168
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "SINGLE ORIGIN BLEND",
+      "role": "subtitle",
+      "bbox": [
+        451,
+        793,
+        291,
+        76
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "ORDER BY MAY 10",
+      "role": "meta",
+      "bbox": [
+        504,
+        599,
+        199,
+        51
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "premium_ad",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "NIGHT OWL ROAST",
+      "rendered_text": "NIGHT OWL\nROAST",
+      "font_path": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+      "font_size": 59,
+      "tracking_px": 0,
+      "text_rect": [
+        140,
+        197,
+        534,
+        302
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "SINGLE ORIGIN BLEND",
+      "rendered_text": "SINGLE\nORIGIN BLEND",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 37,
+      "tracking_px": 0,
+      "text_rect": [
+        459,
+        798,
+        734,
+        864
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "ORDER BY MAY 10",
+      "rendered_text": "ORDER BY\nMAY 10",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 28,
+      "tracking_px": 0,
+      "text_rect": [
+        527,
+        598,
+        679,
+        650
+      ],
+      "align": "center"
+    }
+  ]
+}

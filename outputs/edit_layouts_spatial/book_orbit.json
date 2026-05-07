@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/book_orbit.png",
+  "blocks": [
+    {
+      "text": "THE LAST ORBIT",
+      "role": "title",
+      "bbox": [
+        89,
+        214,
+        414,
+        198
+      ],
+      "color": [
+        248,
+        241,
+        226
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "MARA VALE",
+      "role": "subtitle",
+      "bbox": [
+        92,
+        898,
+        522,
+        92
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NEW EDITION",
+      "role": "meta",
+      "bbox": [
+        368,
+        714,
+        264,
+        73
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "editorial_serif",
+  "style_details": {
+    "backing": "none",
+    "align": "left",
+    "layout_template": "editorial",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "THE LAST ORBIT",
+      "rendered_text": "THE\nLAST\nORBIT",
+      "font_path": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+      "font_size": 76,
+      "tracking_px": 0,
+      "text_rect": [
+        112,
+        216,
+        383,
+        409
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "MARA VALE",
+      "rendered_text": "MARA VALE",
+      "font_path": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+      "font_size": 49,
+      "tracking_px": 0,
+      "text_rect": [
+        121,
+        926,
+        408,
+        962
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "NEW EDITION",
+      "rendered_text": "NEW\nEDITION",
+      "font_path": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+      "font_size": 39,
+      "tracking_px": 0,
+      "text_rect": [
+        382,
+        719,
+        551,
+        781
+      ],
+      "align": "left"
+    }
+  ]
+}

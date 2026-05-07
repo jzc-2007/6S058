@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_art/travel_iceland.png",
+  "blocks": [
+    {
+      "text": "ICELAND",
+      "role": "title",
+      "bbox": [
+        54,
+        875,
+        660,
+        195
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LAND OF FIRE AND ICE",
+      "role": "subtitle",
+      "bbox": [
+        61,
+        92,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SUMMER 2026",
+      "role": "meta",
+      "bbox": [
+        122,
+        230,
+        537,
+        80
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1
+  }
+}

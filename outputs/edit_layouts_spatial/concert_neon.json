@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/concert_neon.png",
+  "blocks": [
+    {
+      "text": "ELECTRIC MIDNIGHT",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        96,
+        255,
+        245
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ONE NIGHT ONLY",
+      "role": "subtitle",
+      "bbox": [
+        115,
+        483,
+        537,
+        94
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "FRIDAY 10 PM",
+      "role": "meta",
+      "bbox": [
+        200,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "neon",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "ELECTRIC MIDNIGHT",
+      "rendered_text": "ELECTRIC\nMIDNIGHT",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 126,
+      "tracking_px": 2,
+      "text_rect": [
+        58,
+        90,
+        708,
+        300
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "ONE NIGHT ONLY",
+      "rendered_text": "ONE NIGHT ONLY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 56,
+      "tracking_px": 1,
+      "text_rect": [
+        133,
+        507,
+        633,
+        553
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "FRIDAY 10 PM",
+      "rendered_text": "FRIDAY 10 PM",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_rect": [
+        226,
+        916,
+        542,
+        952
+      ],
+      "align": "center"
+    }
+  ]
+}

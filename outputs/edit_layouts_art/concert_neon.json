@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/concert_neon.png",
+  "blocks": [
+    {
+      "text": "ELECTRIC MIDNIGHT",
+      "role": "title",
+      "bbox": [
+        47,
+        119,
+        368,
+        159
+      ],
+      "color": [
+        96,
+        255,
+        245
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ONE NIGHT ONLY",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        483,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "FRIDAY 10 PM",
+      "role": "meta",
+      "bbox": [
+        83,
+        1084,
+        184,
+        51
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "neon",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  }
+}

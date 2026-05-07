@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/bike_commute.png",
+  "blocks": [
+    {
+      "text": "VELO CITY",
+      "role": "title",
+      "bbox": [
+        114,
+        154,
+        483,
+        168
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BUILT FOR COMMUTERS",
+      "role": "subtitle",
+      "bbox": [
+        89,
+        385,
+        327,
+        69
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "TEST RIDE TODAY",
+      "role": "meta",
+      "bbox": [
+        230,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        246,
+        214
+      ],
+      "stroke_color": [
+        26,
+        31,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "classic_travel",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "bottom_title",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "VELO CITY",
+      "rendered_text": "VELO\nCITY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 95,
+      "tracking_px": 1,
+      "text_rect": [
+        220,
+        155,
+        490,
+        321
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "BUILT FOR COMMUTERS",
+      "rendered_text": "BUILT FOR\nCOMMUTERS",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 40,
+      "tracking_px": 0,
+      "text_rect": [
+        119,
+        384,
+        385,
+        455
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "TEST RIDE TODAY",
+      "rendered_text": "TEST RIDE\nTODAY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 43,
+      "tracking_px": 0,
+      "text_rect": [
+        299,
+        897,
+        528,
+        972
+      ],
+      "align": "center"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_genposter/boardgame_night.png",
+  "blocks": [
+    {
+      "text": "TABLETOP NIGHT",
+      "role": "title",
+      "bbox": [
+        147,
+        425,
+        471,
+        410
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BEGINNERS WELCOME",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        898,
+        599,
+        97
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "THURSDAY 6 PM",
+      "role": "meta",
+      "bbox": [
+        32,
+        1062,
+        168,
+        51
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "cinematic",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack"
+  }
+}

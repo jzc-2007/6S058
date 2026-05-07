@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/coffee_roast.png",
+  "blocks": [
+    {
+      "text": "NIGHT OWL ROAST",
+      "role": "title",
+      "bbox": [
+        130,
+        171,
+        414,
+        157
+      ],
+      "color": [
+        255,
+        231,
+        168
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "SMALL BATCH COFFEE",
+      "role": "subtitle",
+      "bbox": [
+        451,
+        793,
+        291,
+        76
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "20% OFF TODAY",
+      "role": "meta",
+      "bbox": [
+        504,
+        599,
+        199,
+        51
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        10,
+        7,
+        4
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "premium_ad",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "NIGHT OWL ROAST",
+      "rendered_text": "NIGHT\nOWL ROAST",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Bold.ttf",
+      "font_size": 69,
+      "tracking_px": 0,
+      "text_rect": [
+        140,
+        189,
+        533,
+        309
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "SMALL BATCH COFFEE",
+      "rendered_text": "SMALL BATCH\nCOFFEE",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-Medium.otf",
+      "font_size": 43,
+      "tracking_px": 0,
+      "text_rect": [
+        459,
+        792,
+        734,
+        869
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "20% OFF TODAY",
+      "rendered_text": "20% OFF\nTODAY",
+      "font_path": "/usr/share/fonts/opentype/cabin/Cabin-Medium.otf",
+      "font_size": 30,
+      "tracking_px": 0,
+      "text_rect": [
+        539,
+        597,
+        667,
+        651
+      ],
+      "align": "center"
+    }
+  ]
+}

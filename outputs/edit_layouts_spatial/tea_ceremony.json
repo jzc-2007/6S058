@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/tea_ceremony.png",
+  "blocks": [
+    {
+      "text": "MOUNTAIN TEA",
+      "role": "title",
+      "bbox": [
+        123,
+        161,
+        489,
+        195
+      ],
+      "color": [
+        255,
+        244,
+        231
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "QUIET MORNING BLEND",
+      "role": "subtitle",
+      "bbox": [
+        423,
+        682,
+        291,
+        104
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "BREW SLOWLY",
+      "role": "meta",
+      "bbox": [
+        410,
+        535,
+        199,
+        51
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "script_invite",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "MOUNTAIN TEA",
+      "rendered_text": "MOUNTAIN\nTEA",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 86,
+      "tracking_px": 0,
+      "text_rect": [
+        134,
+        188,
+        600,
+        328
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "QUIET MORNING BLEND",
+      "rendered_text": "QUIET\nMORNING\nBLEND",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 39,
+      "tracking_px": 0,
+      "text_rect": [
+        474,
+        684,
+        663,
+        784
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "BREW SLOWLY",
+      "rendered_text": "BREW SLOWLY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 24,
+      "tracking_px": 0,
+      "text_rect": [
+        416,
+        551,
+        603,
+        570
+      ],
+      "align": "center"
+    }
+  ]
+}

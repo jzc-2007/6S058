@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/skincare_lumina.png",
+  "blocks": [
+    {
+      "text": "LUMINA SERUM",
+      "role": "title",
+      "bbox": [
+        74,
+        555,
+        368,
+        252
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "HYDRATION THAT LASTS",
+      "role": "subtitle",
+      "bbox": [
+        707,
+        55,
+        61,
+        295
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SHOP THE DROP",
+      "role": "meta",
+      "bbox": [
+        672,
+        1001,
+        96,
+        114
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3
+  }
+}

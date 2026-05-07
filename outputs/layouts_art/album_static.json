@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_art/album_static.png",
+  "blocks": [
+    {
+      "text": "STATIC GARDEN",
+      "role": "title",
+      "bbox": [
+        38,
+        80,
+        660,
+        195
+      ],
+      "color": [
+        255,
+        250,
+        214
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "ECHO VALE",
+      "role": "subtitle",
+      "bbox": [
+        161,
+        944,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        231,
+        92
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "OUT NOW",
+      "role": "meta",
+      "bbox": [
+        107,
+        760,
+        537,
+        80
+      ],
+      "color": [
+        255,
+        231,
+        92
+      ],
+      "stroke_color": [
+        14,
+        14,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "handmade_marker",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 0
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_styled/fitness_launch.png",
+  "blocks": [
+    {
+      "text": "PULSE RUNNER",
+      "role": "title",
+      "bbox": [
+        53,
+        921,
+        660,
+        195
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LIGHTER EVERY MILE",
+      "role": "subtitle",
+      "bbox": [
+        84,
+        806,
+        599,
+        97
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "TRY IT TODAY",
+      "role": "meta",
+      "bbox": [
+        115,
+        668,
+        537,
+        80
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "sport"
+}

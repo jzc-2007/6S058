@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/tech_summit.png",
+  "blocks": [
+    {
+      "text": "VISION SUMMIT",
+      "role": "title",
+      "bbox": [
+        107,
+        92,
+        567,
+        195
+      ],
+      "color": [
+        245,
+        245,
+        235
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COMPUTER VISION FOR DESIGN",
+      "role": "subtitle",
+      "bbox": [
+        406,
+        718,
+        291,
+        134
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "OCTOBER 9",
+      "role": "meta",
+      "bbox": [
+        122,
+        858,
+        199,
+        84
+      ],
+      "color": [
+        255,
+        74,
+        52
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "brutalist_type",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column",
+    "tracking": 2
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "VISION SUMMIT",
+      "rendered_text": "VISION\nSUMMIT",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 112,
+      "tracking_px": 4,
+      "text_rect": [
+        138,
+        96,
+        603,
+        282
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "COMPUTER VISION FOR DESIGN",
+      "rendered_text": "COMPUTER\nVISION FOR\nDESIGN",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 44,
+      "tracking_px": 1,
+      "text_rect": [
+        422,
+        729,
+        687,
+        841
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "OCTOBER 9",
+      "rendered_text": "OCTOBER\n9",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 36,
+      "tracking_px": 1,
+      "text_rect": [
+        133,
+        870,
+        321,
+        930
+      ],
+      "align": "left"
+    }
+  ]
+}

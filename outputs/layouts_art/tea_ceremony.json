@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_art/tea_ceremony.png",
+  "blocks": [
+    {
+      "text": "MOUNTAIN TEA",
+      "role": "title",
+      "bbox": [
+        85,
+        129,
+        595,
+        115
+      ],
+      "color": [
+        255,
+        244,
+        231
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FIRST FLUSH",
+      "role": "subtitle",
+      "bbox": [
+        132,
+        968,
+        501,
+        69
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "LIMITED HARVEST",
+      "role": "meta",
+      "bbox": [
+        164,
+        792,
+        282,
+        51
+      ],
+      "color": [
+        255,
+        251,
+        242
+      ],
+      "stroke_color": [
+        52,
+        34,
+        30
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "script_invite",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 0
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/movie_solar.png",
+  "blocks": [
+    {
+      "text": "SOLAR WAKE",
+      "role": "title",
+      "bbox": [
+        92,
+        299,
+        583,
+        195
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "DIRECTED BY NORA CHEN",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        737,
+        291,
+        120
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "OPENING FRIDAY",
+      "role": "meta",
+      "bbox": [
+        138,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "cinematic",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "SOLAR WAKE",
+      "rendered_text": "SOLAR WAKE",
+      "font_path": "/System/Library/Fonts/Supplemental/Impact.ttf",
+      "font_size": 106,
+      "tracking_px": 2,
+      "text_rect": [
+        106,
+        348,
+        660,
+        444
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "DIRECTED BY NORA CHEN",
+      "rendered_text": "DIRECTED\nBY NORA\nCHEN",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_rect": [
+        103,
+        738,
+        339,
+        856
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "OPENING FRIDAY",
+      "rendered_text": "OPENING\nFRIDAY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 42,
+      "tracking_px": 0,
+      "text_rect": [
+        223,
+        898,
+        421,
+        971
+      ],
+      "align": "center"
+    }
+  ]
+}

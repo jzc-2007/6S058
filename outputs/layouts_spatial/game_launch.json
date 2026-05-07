@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/game_launch.png",
+  "blocks": [
+    {
+      "text": "GATE OF ASH",
+      "role": "title",
+      "bbox": [
+        153,
+        414,
+        460,
+        253
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 4,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "BEGIN THE QUEST",
+      "role": "subtitle",
+      "bbox": [
+        76,
+        737,
+        291,
+        120
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "AVAILABLE NOW",
+      "role": "meta",
+      "bbox": [
+        174,
+        929,
+        404,
+        51
+      ],
+      "color": [
+        248,
+        248,
+        248
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "cinematic",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "GATE OF ASH",
+      "rendered_text": "GATE OF\nASH",
+      "font_path": "/usr/share/fonts/opentype/bebas-neue/BebasNeue-Bold.otf",
+      "font_size": 150,
+      "tracking_px": 3,
+      "text_rect": [
+        189,
+        416,
+        577,
+        664
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "BEGIN THE QUEST",
+      "rendered_text": "BEGIN THE\nQUEST",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 59,
+      "tracking_px": 1,
+      "text_rect": [
+        85,
+        742,
+        357,
+        852
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "AVAILABLE NOW",
+      "rendered_text": "AVAILABLE NOW",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 33,
+      "tracking_px": 0,
+      "text_rect": [
+        262,
+        940,
+        490,
+        968
+      ],
+      "align": "center"
+    }
+  ]
+}

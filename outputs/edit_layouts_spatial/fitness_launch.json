@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/fitness_launch.png",
+  "blocks": [
+    {
+      "text": "PULSE RUNNER",
+      "role": "title",
+      "bbox": [
+        153,
+        414,
+        460,
+        253
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LIGHTER EVERY MILE",
+      "role": "subtitle",
+      "bbox": [
+        105,
+        910,
+        415,
+        77
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "TRY IT TODAY",
+      "role": "meta",
+      "bbox": [
+        199,
+        760,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "sport",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "dynamic_diagonal",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "PULSE RUNNER",
+      "rendered_text": "PULSE\nRUNNER",
+      "font_path": "/System/Library/Fonts/Supplemental/Impact.ttf",
+      "font_size": 132,
+      "tracking_px": 2,
+      "text_rect": [
+        167,
+        415,
+        598,
+        666
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "LIGHTER EVERY MILE",
+      "rendered_text": "LIGHTER EVERY\nMILE",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_rect": [
+        128,
+        910,
+        497,
+        987
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "TRY IT TODAY",
+      "rendered_text": "TRY IT TODAY",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 46,
+      "tracking_px": 0,
+      "text_rect": [
+        221,
+        777,
+        545,
+        816
+      ],
+      "align": "center"
+    }
+  ]
+}

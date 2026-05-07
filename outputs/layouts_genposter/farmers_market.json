@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_genposter/farmers_market.png",
+  "blocks": [
+    {
+      "text": "RIVER MARKET",
+      "role": "title",
+      "bbox": [
+        78,
+        110,
+        609,
+        76
+      ],
+      "color": [
+        255,
+        248,
+        210
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "LOCAL FARMS",
+      "role": "subtitle",
+      "bbox": [
+        61,
+        990,
+        599,
+        97
+      ],
+      "color": [
+        242,
+        255,
+        225
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SATURDAY MORNING",
+      "role": "meta",
+      "bbox": [
+        122,
+        898,
+        537,
+        80
+      ],
+      "color": [
+        242,
+        255,
+        225
+      ],
+      "stroke_color": [
+        34,
+        55,
+        28
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "organic_market",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "bottom_title"
+  }
+}

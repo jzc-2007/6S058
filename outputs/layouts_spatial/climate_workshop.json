@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/climate_workshop.png",
+  "blocks": [
+    {
+      "text": "RESILIENT COASTS",
+      "role": "title",
+      "bbox": [
+        107,
+        92,
+        567,
+        195
+      ],
+      "color": [
+        226,
+        246,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COMMUNITY WORKSHOP",
+      "role": "subtitle",
+      "bbox": [
+        107,
+        529,
+        386,
+        94
+      ],
+      "color": [
+        244,
+        250,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "JUNE 12",
+      "role": "meta",
+      "bbox": [
+        76,
+        967,
+        445,
+        74
+      ],
+      "color": [
+        244,
+        250,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "clean_corporate",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column",
+    "tracking": 0
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "RESILIENT COASTS",
+      "rendered_text": "RESILIENT\nCOASTS",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 112,
+      "tracking_px": 0,
+      "text_rect": [
+        138,
+        97,
+        617,
+        281
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "COMMUNITY WORKSHOP",
+      "rendered_text": "COMMUNITY\nWORKSHOP",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Regular.ttf",
+      "font_size": 52,
+      "tracking_px": 0,
+      "text_rect": [
+        128,
+        532,
+        398,
+        620
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "JUNE 12",
+      "rendered_text": "JUNE 12",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Regular.ttf",
+      "font_size": 41,
+      "tracking_px": 0,
+      "text_rect": [
+        100,
+        988,
+        240,
+        1019
+      ],
+      "align": "left"
+    }
+  ]
+}

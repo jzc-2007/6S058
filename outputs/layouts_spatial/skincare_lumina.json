@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/skincare_lumina.png",
+  "blocks": [
+    {
+      "text": "LUMINA SERUM",
+      "role": "title",
+      "bbox": [
+        123,
+        161,
+        489,
+        195
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "GLOW STARTS HERE",
+      "role": "subtitle",
+      "bbox": [
+        106,
+        618,
+        308,
+        85
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NEW FORMULA",
+      "role": "meta",
+      "bbox": [
+        86,
+        982,
+        225,
+        51
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "LUMINA SERUM",
+      "rendered_text": "LUMINA\nSERUM",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-AllSC.ttf",
+      "font_size": 132,
+      "tracking_px": 8,
+      "text_rect": [
+        133,
+        185,
+        601,
+        332
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "GLOW STARTS HERE",
+      "rendered_text": "GLOW\nSTARTS HERE",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+      "font_size": 40,
+      "tracking_px": 2,
+      "text_rect": [
+        119,
+        628,
+        401,
+        693
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "NEW FORMULA",
+      "rendered_text": "NEW FORMULA",
+      "font_path": "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+      "font_size": 25,
+      "tracking_px": 1,
+      "text_rect": [
+        99,
+        997,
+        298,
+        1017
+      ],
+      "align": "center"
+    }
+  ]
+}

@@ -3,8 +3,6 @@ __pycache__/
 *.pyc
 
 logs/
-outputs/
-checkpoints/
 
 submission.aux
 submission.bbl

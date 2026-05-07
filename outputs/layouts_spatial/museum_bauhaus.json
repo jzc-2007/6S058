@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/museum_bauhaus.png",
+  "blocks": [
+    {
+      "text": "BAUHAUS NOW",
+      "role": "title",
+      "bbox": [
+        122,
+        184,
+        489,
+        195
+      ],
+      "color": [
+        245,
+        45,
+        45
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FORMS IN MOTION",
+      "role": "subtitle",
+      "bbox": [
+        324,
+        557,
+        307,
+        73
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "APRIL 12 - JULY 30",
+      "role": "meta",
+      "bbox": [
+        397,
+        768,
+        209,
+        51
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "bauhaus",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "top_left",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "BAUHAUS NOW",
+      "rendered_text": "BAUHAUS\nNOW",
+      "font_path": "/usr/share/fonts/opentype/bebas-neue/BebasNeue-Regular.otf",
+      "font_size": 114,
+      "tracking_px": 2,
+      "text_rect": [
+        198,
+        186,
+        534,
+        376
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "FORMS IN MOTION",
+      "rendered_text": "FORMS IN\nMOTION",
+      "font_path": "/usr/share/fonts/truetype/comfortaa/Comfortaa-Bold.ttf",
+      "font_size": 40,
+      "tracking_px": 0,
+      "text_rect": [
+        370,
+        556,
+        585,
+        631
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "APRIL 12 - JULY 30",
+      "rendered_text": "APRIL 12 -\nJULY 30",
+      "font_path": "/usr/share/fonts/truetype/comfortaa/Comfortaa-Bold.ttf",
+      "font_size": 27,
+      "tracking_px": 0,
+      "text_rect": [
+        434,
+        766,
+        569,
+        820
+      ],
+      "align": "center"
+    }
+  ]
+}

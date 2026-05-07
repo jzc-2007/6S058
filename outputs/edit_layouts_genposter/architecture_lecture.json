@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_genposter/architecture_lecture.png",
+  "blocks": [
+    {
+      "text": "CITIES IN CONCRETE",
+      "role": "title",
+      "bbox": [
+        122,
+        852,
+        554,
+        195
+      ],
+      "color": [
+        245,
+        45,
+        45
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "DESIGN FORUM",
+      "role": "subtitle",
+      "bbox": [
+        442,
+        356,
+        304,
+        101
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NOVEMBER 21",
+      "role": "meta",
+      "bbox": [
+        501,
+        760,
+        206,
+        79
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "bauhaus",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "top_left"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_spatial/jazz_blue_note.png",
+  "blocks": [
+    {
+      "text": "BLUE NOTE HOUR",
+      "role": "title",
+      "bbox": [
+        46,
+        80,
+        675,
+        230
+      ],
+      "color": [
+        96,
+        255,
+        245
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "QUARTET LIVE",
+      "role": "subtitle",
+      "bbox": [
+        113,
+        693,
+        291,
+        69
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SUNDAY 8 PM",
+      "role": "meta",
+      "bbox": [
+        138,
+        898,
+        368,
+        73
+      ],
+      "color": [
+        255,
+        245,
+        107
+      ],
+      "stroke_color": [
+        7,
+        0,
+        20
+      ],
+      "shadow_color": [
+        255,
+        0,
+        180
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "neon",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "center_stack",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "BLUE NOTE HOUR",
+      "rendered_text": "BLUE NOTE\nHOUR",
+      "font_path": "/usr/share/fonts/truetype/comfortaa/Comfortaa-Bold.ttf",
+      "font_size": 96,
+      "tracking_px": 2,
+      "text_rect": [
+        70,
+        106,
+        697,
+        284
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "QUARTET LIVE",
+      "rendered_text": "QUARTET LIVE",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 42,
+      "tracking_px": 0,
+      "text_rect": [
+        132,
+        707,
+        384,
+        747
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SUNDAY 8 PM",
+      "rendered_text": "SUNDAY 8 PM",
+      "font_path": "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
+      "font_size": 45,
+      "tracking_px": 0,
+      "text_rect": [
+        193,
+        916,
+        451,
+        952
+      ],
+      "align": "center"
+    }
+  ]
+}

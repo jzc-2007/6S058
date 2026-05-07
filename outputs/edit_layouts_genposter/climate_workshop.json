@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_genposter/climate_workshop.png",
+  "blocks": [
+    {
+      "text": "RESILIENT COASTS",
+      "role": "title",
+      "bbox": [
+        107,
+        92,
+        554,
+        195
+      ],
+      "color": [
+        226,
+        246,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "PLANNING SESSION",
+      "role": "subtitle",
+      "bbox": [
+        178,
+        471,
+        308,
+        51
+      ],
+      "color": [
+        244,
+        250,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "JUNE 19",
+      "role": "meta",
+      "bbox": [
+        232,
+        332,
+        273,
+        51
+      ],
+      "color": [
+        244,
+        250,
+        255
+      ],
+      "stroke_color": [
+        0,
+        28,
+        48
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "clean_corporate",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "left",
+    "layout_template": "left_column"
+  }
+}

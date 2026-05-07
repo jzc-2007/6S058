@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_art/fashion_atelier.png",
+  "blocks": [
+    {
+      "text": "ATELIER LINE",
+      "role": "title",
+      "bbox": [
+        76,
+        69,
+        554,
+        195
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "FALL COLLECTION",
+      "role": "subtitle",
+      "bbox": [
+        85,
+        998,
+        428,
+        69
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "PRIVATE PREVIEW",
+      "role": "meta",
+      "bbox": [
+        672,
+        1001,
+        96,
+        114
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3
+  }
+}

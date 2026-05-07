@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_art/book_orbit.png",
+  "blocks": [
+    {
+      "text": "THE LAST ORBIT",
+      "role": "title",
+      "bbox": [
+        98,
+        118,
+        373,
+        189
+      ],
+      "color": [
+        248,
+        241,
+        226
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "MARA VALE",
+      "role": "subtitle",
+      "bbox": [
+        318,
+        349,
+        261,
+        69
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "NEW EDITION",
+      "role": "meta",
+      "bbox": [
+        476,
+        952,
+        242,
+        111
+      ],
+      "color": [
+        238,
+        230,
+        214
+      ],
+      "stroke_color": [
+        34,
+        28,
+        24
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "editorial_serif",
+  "style_details": {
+    "backing": "none",
+    "align": "left",
+    "layout_template": "editorial",
+    "tracking": 0
+  }
+}

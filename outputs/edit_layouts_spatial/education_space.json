@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/education_space.png",
+  "blocks": [
+    {
+      "text": "STARS FOR ALL",
+      "role": "title",
+      "bbox": [
+        192,
+        194,
+        414,
+        170
+      ],
+      "color": [
+        250,
+        250,
+        246
+      ],
+      "stroke_color": [
+        18,
+        18,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "OBSERVATORY OPEN HOUSE",
+      "role": "subtitle",
+      "bbox": [
+        256,
+        510,
+        291,
+        85
+      ],
+      "color": [
+        236,
+        236,
+        228
+      ],
+      "stroke_color": [
+        18,
+        18,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "JUNE 2",
+      "role": "meta",
+      "bbox": [
+        184,
+        990,
+        264,
+        73
+      ],
+      "color": [
+        236,
+        236,
+        228
+      ],
+      "stroke_color": [
+        18,
+        18,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "modern_minimal",
+  "style_details": {
+    "backing": "none",
+    "align": "left",
+    "layout_template": "top_left",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "STARS FOR ALL",
+      "rendered_text": "STARS\nFOR ALL",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 88,
+      "tracking_px": 1,
+      "text_rect": [
+        215,
+        204,
+        607,
+        353
+      ],
+      "align": "left"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "OBSERVATORY OPEN HOUSE",
+      "rendered_text": "OBSERVATORY\nOPEN HOUSE",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 36,
+      "tracking_px": 0,
+      "text_rect": [
+        272,
+        522,
+        553,
+        582
+      ],
+      "align": "left"
+    },
+    {
+      "role": "meta",
+      "source_text": "JUNE 2",
+      "rendered_text": "JUNE 2",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 37,
+      "tracking_px": 0,
+      "text_rect": [
+        198,
+        1012,
+        331,
+        1041
+      ],
+      "align": "left"
+    }
+  ]
+}

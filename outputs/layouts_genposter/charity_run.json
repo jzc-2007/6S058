@@ -1,0 +1,97 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/ours_genposter/charity_run.png",
+  "blocks": [
+    {
+      "text": "RUN FOR HOPE",
+      "role": "title",
+      "bbox": [
+        265,
+        781,
+        236,
+        124
+      ],
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 5,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "5K COMMUNITY RACE",
+      "role": "subtitle",
+      "bbox": [
+        140,
+        963,
+        487,
+        51
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "REGISTER TODAY",
+      "role": "meta",
+      "bbox": [
+        478,
+        1025,
+        168,
+        51
+      ],
+      "color": [
+        255,
+        205,
+        74
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "sport",
+  "style_details": {
+    "backing": "underline",
+    "align": "center",
+    "layout_template": "dynamic_diagonal"
+  }
+}

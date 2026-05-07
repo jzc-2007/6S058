@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/skincare_lumina.png",
+  "blocks": [
+    {
+      "text": "LUMINA SERUM",
+      "role": "title",
+      "bbox": [
+        123,
+        161,
+        489,
+        195
+      ],
+      "color": [
+        250,
+        238,
+        216
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "HYDRATION THAT LASTS",
+      "role": "subtitle",
+      "bbox": [
+        106,
+        618,
+        308,
+        85
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "SHOP THE DROP",
+      "role": "meta",
+      "bbox": [
+        86,
+        982,
+        225,
+        51
+      ],
+      "color": [
+        244,
+        238,
+        230
+      ],
+      "stroke_color": [
+        32,
+        22,
+        18
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 1,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "luxury_fashion",
+  "style_details": {
+    "backing": "none",
+    "align": "center",
+    "layout_template": "editorial",
+    "tracking": 3
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "LUMINA SERUM",
+      "rendered_text": "LUMINA\nSERUM",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 110,
+      "tracking_px": 6,
+      "text_rect": [
+        137,
+        169,
+        597,
+        347
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "HYDRATION THAT LASTS",
+      "rendered_text": "HYDRATION\nTHAT LASTS",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 42,
+      "tracking_px": 2,
+      "text_rect": [
+        118,
+        626,
+        402,
+        695
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "SHOP THE DROP",
+      "rendered_text": "SHOP THE\nDROP",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 25,
+      "tracking_px": 1,
+      "text_rect": [
+        130,
+        985,
+        267,
+        1029
+      ],
+      "align": "center"
+    }
+  ]
+}

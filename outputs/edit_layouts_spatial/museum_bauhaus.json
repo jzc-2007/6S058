@@ -1,0 +1,145 @@
+{
+  "width": 768,
+  "height": 1152,
+  "source": "outputs/edit_after_spatial/museum_bauhaus.png",
+  "blocks": [
+    {
+      "text": "BAUHAUS NOW",
+      "role": "title",
+      "bbox": [
+        122,
+        184,
+        489,
+        195
+      ],
+      "color": [
+        245,
+        45,
+        45
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 3,
+      "align": "center",
+      "font_scale": 1.0
+    },
+    {
+      "text": "COLOR AND CONSTRUCTION",
+      "role": "subtitle",
+      "bbox": [
+        324,
+        557,
+        307,
+        73
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    },
+    {
+      "text": "MAY 3 - AUGUST 18",
+      "role": "meta",
+      "bbox": [
+        397,
+        768,
+        209,
+        51
+      ],
+      "color": [
+        255,
+        243,
+        76
+      ],
+      "stroke_color": [
+        0,
+        0,
+        0
+      ],
+      "shadow_color": [
+        0,
+        0,
+        0
+      ],
+      "stroke_width": 2,
+      "align": "center",
+      "font_scale": 0.82
+    }
+  ],
+  "style": "bauhaus",
+  "style_details": {
+    "backing": "side_rule",
+    "align": "center",
+    "layout_template": "top_left",
+    "tracking": 1
+  },
+  "rendered_blocks": [
+    {
+      "role": "title",
+      "source_text": "BAUHAUS NOW",
+      "rendered_text": "BAUHAUS\nNOW",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 92,
+      "tracking_px": 1,
+      "text_rect": [
+        131,
+        202,
+        602,
+        361
+      ],
+      "align": "center"
+    },
+    {
+      "role": "subtitle",
+      "source_text": "COLOR AND CONSTRUCTION",
+      "rendered_text": "COLOR AND\nCONSTRUCTION",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 36,
+      "tracking_px": 0,
+      "text_rect": [
+        330,
+        561,
+        624,
+        625
+      ],
+      "align": "center"
+    },
+    {
+      "role": "meta",
+      "source_text": "MAY 3 - AUGUST 18",
+      "rendered_text": "MAY 3 -\nAUGUST 18",
+      "font_path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "font_size": 29,
+      "tracking_px": 0,
+      "text_rect": [
+        418,
+        766,
+        585,
+        820
+      ],
+      "align": "center"
+    }
+  ]
+}
