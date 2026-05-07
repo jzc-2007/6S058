@@ -599,7 +599,7 @@ def main() -> None:
     args.curve.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(7, 4))
     plt.plot([h["val_acc"] for h in layout_hist], label="layout prior val acc")
-    plt.plot([h["val_acc"] for h in style_hist], label="style LoRA val acc")
+    plt.plot([h["val_acc"] for h in style_hist], label="tool router val acc")
     plt.xlabel("epoch")
     plt.ylabel("validation accuracy")
     plt.ylim(0, 1.02)
